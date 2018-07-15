@@ -1,0 +1,260 @@
+
+nav {
+    height: 40px;
+}
+
+.navbar {
+    min-height: 0;
+}
+
+.nav > li > a {
+    padding: 9px 15px;
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    background: #e94f03;
+    color: white;
+}
+
+.navbar-default {
+    background: #ff6213;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: white;
+}
+
+.navbar-default .navbar-nav > .active > a {
+    background: #e94f03;
+    color: white;
+}
+
+.navbar-default .navbar-nav > .active > a:hover {
+    background: #e94f03;
+    color: white;
+}
+
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+    background-color: #e94f03;
+    color: white;
+}
+
+h2{
+    font-size: 48px;
+    font-weight: bold;
+    padding: 150px 0 10px;
+}
+
+h1{
+    font-weight: bold;
+}
+
+.thumbnail {
+    padding: 0;
+    border: 3px solid #dfdfdf;
+}
+
+.thumbnail > .caption > h4 {
+    margin: 15px 45px 15px 25px;
+    font-weight: 600;
+    color: grey;
+}
+
+.carousel-control.right {
+    background-image: none;
+}
+
+.carousel-control.left {
+    background-image: none;
+}
+
+ol {
+    margin-bottom: -60px;
+}
+
+.carousel-indicators li {
+    background: #dfdfdf;
+    width: 14px;
+    height: 14px;
+    border: none;
+    margin: 0 5px;
+}
+
+.carousel-indicators .active {
+    background: #b9b9b9;
+    width: 14px;
+    height: 14px;
+    margin: 0 6px;
+    border: none;
+}
+
+.carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right, .carousel-control .icon-next, .carousel-control .icon-prev {
+    background: white;
+    border-radius: 50%;
+    width: 65px;
+    height: 65px;
+    padding: 15px;
+    margin-right: -115px;
+    color: black;
+    opacity: 1;
+}
+
+.carousel-control .glyphicon-chevron-left{
+    margin-left: -115px;
+}
+
+.carousel-control {
+    margin-top: -50px;
+}
+
+.contact-form{
+    box-sizing: border-box;
+    background: #ededed;
+    padding: 0 150px 55px;
+    margin-top: 150px;
+}
+
+.contact-form h2{
+    margin-top: -85px;
+    margin-bottom: 0;
+}
+
+.contact-form p{
+    margin-bottom: 30px;
+}
+
+.contact-form input:not([type="submit"]){
+    padding: 20px 25px;
+    border-radius: 5px;
+    border: none;
+}
+
+.contact-form input[type="submit"]{
+    padding: 0 50px;
+    height: 40px;
+    border: none;
+    background: #ff6213;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: .5s background;
+}
+
+.contact-form input[type="submit"]:hover{
+    background: #e94f03;
+}
+
+.footer-info {
+    box-sizing: border-box;
+    background: #333333;
+    padding: 45px 50px;
+    color: white;
+}
+
+.footer-info a, .footer-info p{
+    color: #bbbbbb;
+    display: block;
+    margin-top: 3px;
+}
+
+.copyright {
+    box-sizing: border-box;
+    background: #555555;
+    padding: 12px 62px 4px;
+}
+
+.phone {
+    font-size: 20px;
+    color: white !important;
+}
+
+.copyright a, .copyright p {
+    color: #dddddd;
+}
+
+.all-item {
+    color: #e94f03;
+    border: 2px solid #e94f03;
+    padding: 10px 25px;
+    margin: 25px;
+    font-weight: bold;
+    transition: .5s background;
+}
+
+.all-item:hover{
+    background: #e94f03;
+    color: white;
+}
+
+.card-info h4{
+    font-weight: bold;
+}
+
+.card-info{
+    padding: 40px 40px 40px 120px;
+}
+
+.card-info > img {
+    margin: 0 0 -125px -100px;
+}
+
+header{
+    padding: 15px 0 0;
+}
+
+header a{
+    display: block;
+    color: #e94f03;
+    margin-bottom: 10px;
+}
+
+header a:hover, header a:focus{
+    color: black;
+}
+
+.phone-header{
+    font-size: 16px;
+    color: black;
+    font-weight: bold;
+}
+
+.card{
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.item-title{
+    margin: 10px 0 0 15px !important;
+}
+
+.item h6{
+    margin: 0 15px;
+}
+
+.item p{
+    margin: 10px 15px;
+}
+
+.item-cost {
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.item-cost > span{
+    color: #ff6213;
+    margin-left: 15px;
+}
+
+.rait {
+    font-size: 16px;
+    color: gold;
+}
+
+p > a{
+    color: #ff6213;
+}
+
+p > a:hover{
+    color: black;
+    text-decoration: none;
+}
