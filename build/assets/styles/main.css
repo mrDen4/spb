@@ -207,3 +207,99 @@ p > a {
 p > a:hover {
   color: black;
   text-decoration: none; }
+
+.another__slide {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #cccccc;
+  width: 280px;
+  padding: 0; }
+  .another__slide .slide__img {
+    background-color: #f6f6f6;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .another__slide .slide__info {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    padding: 20px 26px 0 26px; }
+  .another__slide .info__title {
+    font-size: 12px; }
+  .another__slide .info__size {
+    font-size: 20px;
+    margin-bottom: 20px; }
+  .another__slide .info__weight {
+    margin-bottom: 10px; }
+  .another__slide .info__buy {
+    padding: 0 26px;
+    display: flex;
+    font-size: 20px;
+    font-weight: bold;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 20px; }
+  .another__slide .info__stars {
+    margin-bottom: 20px; }
+  .another__slide .buy__btn {
+    color: #ff6212;
+    background: none;
+    border: 2px solid #ff6212;
+    border-radius: 6px;
+    width: 68px;
+    height: 43px; }
+
+.another__title {
+  margin: 60px 0 30px 0; }
+
+.product__breadcrumbs {
+  background: white; }
+
+.product__price {
+  font-size: 25px;
+  font-weight: bold; }
+
+.product__ord {
+  background-color: #ff6212;
+  border: 2px solid #ff6212;
+  border-radius: 4px;
+  width: 238px;
+  height: 54px;
+  color: white;
+  margin-bottom: 10px; }
+
+.product__calculate {
+  border: 2px solid #ff6212;
+  border-radius: 4px;
+  width: 238px;
+  height: 54px; }
+
+.product__title {
+  font-size: 30px;
+  font-weight: 500;
+  color: #333333;
+  margin: 30px 0 50px 0; }
+
+.subcategory__card {
+  display: flex;
+  flex-direction: column;
+  height: 275px;
+  border: 1px solid #ededed;
+  margin-bottom: 20px; }
+  .subcategory__card .card__block {
+    background-color: #f6f6f6;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .subcategory__card .card__title {
+    padding: 25px;
+    color: black;
+    font-size: 16px;
+    font-weight: 400; }
+
+.subcategory__title {
+  padding: 0; }
