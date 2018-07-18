@@ -208,6 +208,22 @@ p > a:hover {
   color: black;
   text-decoration: none; }
 
+.basket {
+  border: 2px solid #ff6212;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 175px;
+  height: 44px;
+  margin-bottom: 40px; }
+
+.nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
 .product__another {
   position: relative; }
 
