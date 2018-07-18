@@ -18,21 +18,17 @@
                         <img src="./assets/images/logo.png" alt="СтройПеноБетон" height="50px">
                     </a>
                 </div>
-                <div class="col-md-2">
+                <div class="col-md-4">
                     <a href="cart.php" class="card">
                         <span class="glyphicon glyphicon-shopping-cart"> </span> Корзина (0)</a>
-                </div>
-                <div class="col-md-2">
-                    <a href="#">Задать вопрос</a>
-                    <a href="#" data-toggle="modal" data-target=".bs-example-modal-sm">Заказать звонок</a>
                 </div>
                 <div class="col-md-2">
                     <p>г. Челябинск
                         <br>ул. Складская, д.1</p>
                 </div>
                 <div class="col-md-3">
-                    <a href="#" class="phone-header">+7 (351) 235-67-85</a>
                     <a href="#" class="phone-header">+7 (351) 258-05-00</a>
+                    <a href="#" data-toggle="modal" data-target=".bs-example-modal-sm">Заказать звонок</a>
                 </div>
             </div>
         </div>
@@ -50,9 +46,6 @@
                 </div>
                 <div class="collapse navbar-collapse" id="navbar-mobile">
                     <ul class="nav navbar-nav">
-                        <li class="active">
-                            <a href="index.php">Главная</a>
-                        </li>
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Каталог
                                 <b class="caret"></b>
@@ -126,13 +119,16 @@
                     </ul>
                 </div>
             </div>
+
+
         </nav>
+
     </header>
 
     <main class="product">
         <div class="container">
             <nav aria-label="breadcrumb">
-                <ol class="breadcrumb">
+                <ol class="breadcrumb product__breadcrumbs">
                     <li class="breadcrumb-item">
                         <a href="#">Продукция</a>
                     </li>
@@ -142,15 +138,34 @@
                     <li class="breadcrumb-item active" aria-current="page">Перемычка 200*300*1100</li>
                 </ol>
             </nav>
+            <h1 class="product__title">Перемычка керамзитобетонная 200х300х1100 мм</h1>
             <div class="row">
                 <div class="col-md-6">
                     <img src="./assets/images/item.png" alt="Картинка">
                 </div>
                 <div class="col-md-3">
-                    <h6>Перемычка</h6>
-                    <h4 class="item-title">200x300x1100</h4>
-                    <p>Вес: 43кг</p>
-                    <p>Нагрузка: 2т/пм</p>
+                    <table class="table">
+                        <tr>
+                            <td>Вес</td>
+                            <td>43 кг.</td>
+                        </tr>
+                        <tr>
+                            <td>Ширина</td>
+                            <td>300 мм</td>
+                        </tr>
+                        <tr>
+                            <td>Нагрузка </td>
+                            <td>2 т/пм</td>
+                        </tr>
+                        <tr>
+                            <td>Длина</td>
+                            <td>1100 мм</td>
+                        </tr>
+                        <tr>
+                            <td>Высота</td>
+                            <td>200 мм</td>
+                        </tr>
+                    </table>
                     <p class="rait">
                         <span class="glyphicon glyphicon-star"></span>
                         <span class="glyphicon glyphicon-star"></span>
@@ -158,14 +173,11 @@
                         <span class="glyphicon glyphicon-star"></span>
                         <span class="glyphicon glyphicon-star"></span>
                     </p>
-                    <p class="item-cost">800 руб/шт
-                        <span id="1" class="glyphicon glyphicon-shopping-cart"></span>
-                    </p>
                 </div>
                 <div class="col-md-3">
-                    <p>800 руб./шт</p>
-                    <button class="btn">Заказать</button>
-                    <button class="btn">Рассчитать стоимость</button>
+                    <p class="product__price">800 руб./шт</p>
+                    <button class="btn product__ord">Заказать</button>
+                    <button class="btn product__calculate">Рассчитать стоимость</button>
                 </div>
             </div>
             <div class="row">
@@ -188,74 +200,107 @@
                         мм - необходимая дли перемычки.</p>
                 </div>
                 <div class="col-md-4">
-                    <img src="./assets/images/arm-1.png" alt="">
+                    <img src="./assets/images/arm-1.png" alt="" style="margin-bottom: 10px;">
                     <img src="./assets/images/arm-2.png" alt="">
                 </div>
             </div>
-            <div class="product__another">
+            <div class="product__another row">
+                <h1 class="another__title">Сопутствующие товары</h1>
                 <div class="another__slider">
-                    <div class="another__slide">
+                    <div class="another__slide col-md-2">
                         <div class="slide__img">
-                            <img src="" alt="" class="img__img">
+                            <img src="./assets/images/another/another-1.png" alt="" class="img__img">
                         </div>
                         <div class="slide__info">
                             <p class="info__title">Пеноблок</p>
                             <p class="info__size">300*200*600</p>
                             <p class="info__weight">Вес: 27кг.</p>
                             <p class="info__type">Тип: стеновой</p>
-                            <div class="info__stars"></div>
+                            <p class="rait info__stars">
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                            </p>
                         </div>
                         <div class="info__buy">
                             <p class="buy__price">2200 руб/м3</p>
-                            <button class="buy__btn">Иконка</button>
+                            <button class="buy__btn">
+                                <span id="1" class="glyphicon glyphicon-shopping-cart"></span>
+                            </button>
                         </div>
                     </div>
-                    <div class="another__slide">
+                    <div class="another__slide col-md-2">
                         <div class="slide__img">
-                            <img src="" alt="" class="img__img">
+                            <img src="./assets/images/another/another-2.png" alt="" class="img__img">
                         </div>
                         <div class="slide__info">
                             <p class="info__title">Пеноблок</p>
                             <p class="info__size">300*200*600</p>
                             <p class="info__weight">Вес: 27кг.</p>
                             <p class="info__type">Тип: стеновой</p>
-                            <div class="info__stars"></div>
+                            <p class="rait info__stars">
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                            </p>
                         </div>
                         <div class="info__buy">
                             <p class="buy__price">2200 руб/м3</p>
-                            <button class="buy__btn">Иконка</button>
+                            <button class="buy__btn">
+                                <span id="1" class="glyphicon glyphicon-shopping-cart"></span>
+                            </button>
                         </div>
                     </div>
-                    <div class="another__slide">
+                    <div class="another__slide col-md-2">
                         <div class="slide__img">
-                            <img src="" alt="" class="img__img">
+                            <img src="./assets/images/another/another-3.png" alt="" class="img__img">
                         </div>
                         <div class="slide__info">
                             <p class="info__title">Пеноблок</p>
                             <p class="info__size">300*200*600</p>
                             <p class="info__weight">Вес: 27кг.</p>
                             <p class="info__type">Тип: стеновой</p>
-                            <div class="info__stars"></div>
+                            <p class="rait info__stars">
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                            </p>
                         </div>
                         <div class="info__buy">
                             <p class="buy__price">2200 руб/м3</p>
-                            <button class="buy__btn">Иконка</button>
+                            <button class="buy__btn">
+                                <span id="1" class="glyphicon glyphicon-shopping-cart"></span>
+                            </button>
                         </div>
                     </div>
-                    <div class="another__slide">
+                    <div class="another__slide col-md-2">
                         <div class="slide__img">
-                            <img src="" alt="" class="img__img">
+                            <img src="./assets/images/another/another-4.png" alt="" class="img__img">
                         </div>
                         <div class="slide__info">
                             <p class="info__title">Пеноблок</p>
                             <p class="info__size">300*200*600</p>
                             <p class="info__weight">Вес: 27кг.</p>
                             <p class="info__type">Тип: стеновой</p>
-                            <div class="info__stars"></div>
+                            <p class="rait info__stars">
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                            </p>
                         </div>
                         <div class="info__buy">
                             <p class="buy__price">2200 руб/м3</p>
-                            <button class="buy__btn">Иконка</button>
+                            <button class="buy__btn">
+                                <span id="1" class="glyphicon glyphicon-shopping-cart"></span>
+                            </button>
                         </div>
                     </div>
                 </div>
