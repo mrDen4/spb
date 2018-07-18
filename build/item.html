@@ -5,6 +5,7 @@
     <title>СтройПеноБетон</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/styles/main.css">
 </head>
@@ -13,20 +14,20 @@
     <header>
         <div class="container">
             <div class="row">
-                <div class="col-md-3">
+                <div class="col-md-4">
                     <a href="index.php">
                         <img src="./assets/images/logo.png" alt="СтройПеноБетон" height="50px">
                     </a>
                 </div>
                 <div class="col-md-4">
-                    <a href="cart.php" class="card">
+                    <a href="cart.php" class="card text-center">
                         <span class="glyphicon glyphicon-shopping-cart"> </span> Корзина (0)</a>
                 </div>
                 <div class="col-md-2">
                     <p>г. Челябинск
                         <br>ул. Складская, д.1</p>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-2">
                     <a href="#" class="phone-header">+7 (351) 258-05-00</a>
                     <a href="#" data-toggle="modal" data-target=".bs-example-modal-sm">Заказать звонок</a>
                 </div>
@@ -44,7 +45,7 @@
                         </button>
                     </div>
                 </div>
-                <div class="collapse navbar-collapse" id="navbar-mobile">
+                <div class="collapse navbar-collapse header__nav" id="navbar-mobile">
                     <ul class="nav navbar-nav">
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Каталог
@@ -52,43 +53,43 @@
                             </a>
                             <ul class="dropdown-menu">
                                 <li>
-                                    <a href="catalog.php?type=foamconcrete">Пенобетон стеновой</a>
+                                    <a href="">Перемычки</a>
                                 </li>
                                 <li>
-                                    <a href="catalog.php?type=peremichki_dly_penobloka">Перемычки для пенобетона</a>
+                                    <a href="">Перемычки для пенобетона</a>
                                 </li>
                                 <li>
-                                    <a href="catalog.php?type=beton_tovarnij">Бетон товарный БСТ</a>
+                                    <a href="">Бетон товарный БСТ</a>
                                 </li>
                                 <li>
-                                    <a href="catalog.php?type=bmz">ОБетон мелкозернистый БМЗ</a>
+                                    <a href="">ОБетон мелкозернистый БМЗ</a>
                                 </li>
                                 <li>
-                                    <a href="catalog.php?type=fbs">ФБС фундаментный блок</a>
+                                    <a href="">ФБС фундаментный блок</a>
                                 </li>
                                 <li>
-                                    <a href="catalog.php?type=rastvor">Раствор кладочный</a>
+                                    <a href="">Раствор кладочный</a>
                                 </li>
                                 <li>
-                                    <a href="catalog.php?type=bricks">Кирпич рядовой</a>
+                                    <a href="">Кирпич рядовой</a>
                                 </li>
                                 <li>
-                                    <a href="catalog.php?type=facing_bricks">Кирпич лицевой</a>
+                                    <a href="">Кирпич лицевой</a>
                                 </li>
                                 <li>
-                                    <a href="catalog.php?type=concrete">Цемент, сухие смеси</a>
+                                    <a href="">Цемент, сухие смеси</a>
                                 </li>
                                 <li>
-                                    <a href="catalog.php?type=bulk">Сыпучие материалы</a>
+                                    <a href="">Сыпучие материалы</a>
                                 </li>
                                 <li>
-                                    <a href="catalog.php?type=setka_kladochnaiy">Сетка кладочная</a>
+                                    <a href="">Сетка кладочная</a>
                                 </li>
                                 <li>
-                                    <a href="catalog.php?type=pliti_perekritia">Плиты перекрытия ПК</a>
+                                    <a href="">Плиты перекрытия ПК</a>
                                 </li>
                                 <li>
-                                    <a href="catalog.php?type=peremichka">Перемычки ПБ</a>
+                                    <a href="">Перемычки ПБ</a>
                                 </li>
                             </ul>
                         </li>
@@ -119,12 +120,8 @@
                     </ul>
                 </div>
             </div>
-
-
         </nav>
-
     </header>
-
     <main class="product">
         <div class="container">
             <nav aria-label="breadcrumb">
@@ -206,6 +203,12 @@
             </div>
             <div class="product__another row">
                 <h1 class="another__title">Сопутствующие товары</h1>
+                <button class="prev__btn">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                </button>
+                <button class="next__btn">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </button>
                 <div class="another__slider">
                     <div class="another__slide col-md-2">
                         <div class="slide__img">
@@ -258,6 +261,30 @@
                     <div class="another__slide col-md-2">
                         <div class="slide__img">
                             <img src="./assets/images/another/another-3.png" alt="" class="img__img">
+                        </div>
+                        <div class="slide__info">
+                            <p class="info__title">Пеноблок</p>
+                            <p class="info__size">300*200*600</p>
+                            <p class="info__weight">Вес: 27кг.</p>
+                            <p class="info__type">Тип: стеновой</p>
+                            <p class="rait info__stars">
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                            </p>
+                        </div>
+                        <div class="info__buy">
+                            <p class="buy__price">2200 руб/м3</p>
+                            <button class="buy__btn">
+                                <span id="1" class="glyphicon glyphicon-shopping-cart"></span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="another__slide col-md-2">
+                        <div class="slide__img">
+                            <img src="./assets/images/another/another-4.png" alt="" class="img__img">
                         </div>
                         <div class="slide__info">
                             <p class="info__title">Пеноблок</p>
@@ -405,6 +432,8 @@
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./assets/scripts/main.js"></script>
 </body>
 
 </html>

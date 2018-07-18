@@ -1,9 +1,20 @@
+.product__another {
+  position: relative; }
+
+.another__slider {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
 .another__slide {
   display: flex;
   flex-direction: column;
   border: 1px solid #cccccc;
-  width: 280px;
+  width: 260px;
+  margin-right: 20px;
   padding: 0; }
+  .another__slide:last-child {
+    margin-right: 0; }
   .another__slide .slide__img {
     background-color: #f6f6f6;
     width: 100%;
@@ -62,6 +73,7 @@
 
 .product__calculate {
   border: 2px solid #ff6212;
+  background: none;
   border-radius: 4px;
   width: 238px;
   height: 54px; }
@@ -71,3 +83,25 @@
   font-weight: 500;
   color: #333333;
   margin: 30px 0 50px 0; }
+
+.next__btn {
+  width: 70px;
+  height: 70px;
+  background: #ffffff;
+  border-radius: 50%;
+  border: 1px solid #7d7d7d;
+  position: absolute;
+  z-index: 999;
+  right: -20px;
+  bottom: 200px; }
+
+.prev__btn {
+  width: 70px;
+  height: 70px;
+  background: #ffffff;
+  border-radius: 50%;
+  border: 1px solid #7d7d7d;
+  position: absolute;
+  z-index: 999;
+  bottom: 200px;
+  left: -40px; }
