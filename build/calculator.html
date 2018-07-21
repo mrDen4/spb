@@ -130,7 +130,7 @@
             <h1 class="calculator__title">Калькуляторы</h1>
             <div class="row calculator__concrete">
                 <div class="col-md-4">
-                    <img src="" alt="">
+                    <img src="./assets/images/calculators/1.png" alt="">
                 </div>
                 <div class="col-md-8">
                     <div class="concrete__calc">
@@ -159,7 +159,8 @@
                             </form>
                             <div class="concrete__answ">
                                 <p class="answ__text">Вам понадобится </p>
-                                <p class="answ__text">15 куб/м бетона.</p>
+                                <p class="answ__result">
+                                    <strong>15 куб/м</strong> бетона.</p>
                             </div>
                         </div>
                     </div>
@@ -167,7 +168,7 @@
             </div>
             <div class="row calculator__blocks">
                 <div class="col-md-4">
-                    <img src="" alt="">
+                    <img src="./assets/images/calculators/2.png" alt="">
                 </div>
                 <div class="col-md-8">
                     <div class="blocks__content">
@@ -199,22 +200,29 @@
                             <h2 class="result__title">
                                 Результат
                             </h2>
+                            <table class="table result__table">
+                                <tbody>
+                                    <tr>
+                                        <td>Количество блоков для устройства описанных стен, за вычетом площади проемов, за вычетом
+                                            кладочных швов 5% составит</td>
+                                        <td>2,00 м3</td>
+                                        <td>56 шт.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Общее количество блоков, кратное поддону</td>
+                                        <td>2,88 м3</td>
+                                        <td>80 шт.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Количество поддонов</td>
+                                        <td>2 поддона</td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
                             <div class="result__row">
-                                <p class="row__text">Количество блоков для устройства описанных стен, за вычетом площади проемов, за вычетом кладочных
-                                    швов 5% составит</p>
-                                <p class="row__count">2,00 м3</p>
-                                <p class="row__count">56 шт.</p>
+                                <button class="result__btn">Оставить заявку</button>
                             </div>
-                            <div class="result__row">
-                                <p class="row__text">Общее количество блоков, кратное поддону</p>
-                                <p class="row__count">2,88 м3</p>
-                                <p class="row__count">80 шт.</p>
-                            </div>
-                            <div class="result__row">
-                                <p class="row__text">Количество поддонов</p>
-                                <p class="row__count">2 поддона</p>
-                            </div>
-                            <button class="result__btn">Оставить заявку</button>
                         </div>
                     </div>
                 </div>
@@ -226,144 +234,168 @@
                 <div class="col-md-6">
                     <form class="brick__form">
                         <div class="form__group">
-                            <img src="" alt="иконка">
+                            <div class="form__round">i</div>
                             <label for="" class="form__label">
                                 Размер (Д*Ш*В) или вид кирпича
                             </label>
-                            <input type="text" class="form__inp">
+                            <select type="text" class="form__inp">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                            </select>
+                            <p>мм</p>
                         </div>
                         <div class="form__group">
-                            <img src="" alt="иконка">
+                            <div class="form__round">i</div>
                             <label for="" class="form__label">
                                 Общая длина всех стен (периметр)
                             </label>
                             <input type="text" class="form__inp">
+                            <p>мм</p>
                         </div>
                         <div class="form__group">
-                            <img src="" alt="иконка">
+                            <div class="form__round">i</div>
                             <label for="" class="form__label">
                                 Высота стен по углам
                             </label>
-                            <input type="text" class="form__inp">
+                            <select type="text" class="form__inp">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                            </select>
+                            <p>мм</p>
                         </div>
                         <div class="form__group">
-                            <img src="" alt="иконка">
+                            <div class="form__round">i</div>
                             <label for="" class="form__label">
                                 Толщина стен
                             </label>
-                            <input type="text" class="form__inp">
+                            <select type="text" class="form__inp">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                            </select>
+                            <p>мм</p>
                         </div>
                         <div class="form__group">
-                            <img src="" alt="иконка">
+                            <div class="form__round">i</div>
                             <label for="" class="form__label">
                                 Толщина раствора в кладке
                             </label>
-                            <input type="text" class="form__inp">
+                            <select type="text" class="form__inp">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                            </select>
+                            <p>мм</p>
                         </div>
                         <div class="form__group">
-                            <img src="" alt="иконка">
+                            <div class="form__round">i</div>
                             <label for="" class="form__label">
                                 Кладочная сетка
                             </label>
                             <input type="text" class="form__inp">
+                            <p>мм</p>
                         </div>
                         <div class="form__group">
-                            <img src="" alt="иконка">
+                            <div class="form__round">i</div>
                             <label for="" class="form__label">
                                 Цена за 1 шт.
                             </label>
                             <input type="text" class="form__inp">
+                            <p>руб</p>
                         </div>
                         <div class="form__group">
-                            <img src="" alt="иконка">
+                            <div class="form__round">i</div>
                             <label for="" class="form__label">
                                 Пустотность кирпича
                             </label>
                             <input type="text" class="form__inp">
+                            <p>мм</p>
                         </div>
-                        <div class="form__group">
-                            <label for="" class="form__label">
-                                Размер (Д*Ш*В) или вид кирпича
+                        <div class="form__check">
+                            <label for="" class="check__label">
+                                Учесть окна и двери
                             </label>
-                            <input type="text" class="form__inp">
-                            <label for="" class="form__label">
-                                Размер (Д*Ш*В) или вид кирпича
+                            <input type="checkbox" class="check__checkbox">
+                            <label for="" class="check__label">
+                                Фронтоны
                             </label>
-                            <input type="text" class="form__inp">
+                            <input type="checkbox" class="check__checkbox">
                         </div>
-                        <button class="form__btn">Рассчитать</button>
+                        <div class="form__row">
+                            <button class="form__btn">Рассчитать</button>
+                        </div>
                     </form>
                 </div>
                 <div class="col-md-6">
-                    <img src="" alt="картинка">
+                    <img src="./assets/images/calculators/3.png" alt="картинка" class="brick__img"> 
                 </div>
             </div>
             <div class="row results">
-                <h1 class="results__title">Расчеты</h1>
-                <table class="table results__table">
-                    <tbody>
-                        <tr>
-                            <td>Периметр строения</td>
-                            <td>30</td>
-                            <td>метров</td>
-                        </tr>
-                        <tr>
-                            <td>Общая площадь клади</td>
-                            <td>90</td>
-                            <td>м2</td>
-                        </tr>
-                        <tr>
-                            <td>Толщина стены</td>
-                            <td>120</td>
-                            <td>мм.</td>
-                        </tr>
-                        <tr>
-                            <td>Количество кирпича</td>
-                            <td>4542</td>
-                            <td>шт.</td>
-                        </tr>
-                        <tr>
-                            <td>Вес 1 кирпича</td>
-                            <td>3.6</td>
-                            <td>кг.</td>
-                        </tr>
-                        <tr>
-                            <td>Общий вес кирпича</td>
-                            <td>16349.54</td>
-                            <td>кг.</td>
-                        </tr>
-                        <tr>
-                            <td>Общий объем кирпича</td>
-                            <td>8.86</td>
-                            <td>м3</td>
-                        </tr>
-                        <tr>
-                            <td>Количество кирпича в кубе</td>
-                            <td>512</td>
-                            <td>шт./м3</td>
-                        </tr>
-                        <tr>
-                            <td>Кол-во раствора на всю кладку</td>
-                            <td>1.88</td>
-                            <td>м3</td>
-                        </tr>
-                        <tr>
-                            <td>Примерный вес раствора</td>
-                            <td>3572.37</td>
-                            <td>кг.</td>
-                        </tr>
-                        <tr>
-                            <td>Количество гибких связей</td>
-                            <td>360</td>
-                            <td>шт.</td>
-                        </tr>
-                        <tr>
-                            <td>Оптимальная высота стены</td>
-                            <td>301</td>
-                            <td>см.</td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div class="col-md-8">
+                    <h1 class="results__title">Расчеты</h1>
+                    <table class="table results__table">
+                        <tbody>
+                            <tr>
+                                <td>Периметр строения</td>
+                                <td>30</td>
+                                <td>метров</td>
+                            </tr>
+                            <tr>
+                                <td>Общая площадь клади</td>
+                                <td>90</td>
+                                <td>м2</td>
+                            </tr>
+                            <tr>
+                                <td>Толщина стены</td>
+                                <td>120</td>
+                                <td>мм.</td>
+                            </tr>
+                            <tr>
+                                <td>Количество кирпича</td>
+                                <td>4542</td>
+                                <td>шт.</td>
+                            </tr>
+                            <tr>
+                                <td>Вес 1 кирпича</td>
+                                <td>3.6</td>
+                                <td>кг.</td>
+                            </tr>
+                            <tr>
+                                <td>Общий вес кирпича</td>
+                                <td>16349.54</td>
+                                <td>кг.</td>
+                            </tr>
+                            <tr>
+                                <td>Общий объем кирпича</td>
+                                <td>8.86</td>
+                                <td>м3</td>
+                            </tr>
+                            <tr>
+                                <td>Количество кирпича в кубе</td>
+                                <td>512</td>
+                                <td>шт./м3</td>
+                            </tr>
+                            <tr>
+                                <td>Кол-во раствора на всю кладку</td>
+                                <td>1.88</td>
+                                <td>м3</td>
+                            </tr>
+                            <tr>
+                                <td>Примерный вес раствора</td>
+                                <td>3572.37</td>
+                                <td>кг.</td>
+                            </tr>
+                            <tr>
+                                <td>Количество гибких связей</td>
+                                <td>360</td>
+                                <td>шт.</td>
+                            </tr>
+                            <tr>
+                                <td>Оптимальная высота стены</td>
+                                <td>301</td>
+                                <td>см.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
     </main>

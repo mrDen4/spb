@@ -1,0 +1,257 @@
+.calculator {
+
+    .calculator__title {
+        text-align: center;
+        font-size: 50px;
+        font-weight: 700;
+    }
+
+    .calculator__concrete {
+            padding-bottom: 60px;
+            border-bottom: 1px solid #cccccc;
+
+        .calculator__concrete {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .concrete__title {
+            font-size: 25px;
+            font-weight: 500;
+            color: #333333;
+            padding: 0;
+            margin-bottom: 40px;
+        }
+
+        .concerete__content {
+            display: flex;
+        }
+
+        .concrete__form {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            width: 50%;
+
+            .form__group {
+                display: flex;
+                flex-direction: column;
+                margin-right: 20px;
+                margin-bottom: 20px;
+
+                &:nth-child(2) {
+                    margin-right: 0;
+                }
+            }
+
+            .form__label {
+                font-size: 14px;
+                font-weight: 400;
+                color: #6e6e6e;
+            }
+
+            .form__inp {
+                width: 170px;
+                height: 40px;
+                border: 1px solid #cccccc;
+            }
+
+            .form__btn {
+                width: 170px;
+                height: 40px;
+                border: 1px solid #ff6212;
+                background-color: #ff6212;
+                border-radius: 4px;
+                color: white;
+            }
+        }
+
+        .concrete__answ {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 50%;
+            height: 173px;
+            background-color: #ededed;
+
+            .answ__result {
+                font-size: 35px;
+                font-weight: 400;
+            }
+        }
+    }
+
+    .calculator__blocks {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        border-bottom: 1px solid #cccccc;
+
+        .content__title {
+            font-size: 25px;
+            font-weight: 500;
+            color: #333333;
+            padding: 0;
+            margin-bottom: 40px;
+        }
+
+        .calc__form {
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+
+            .form__group {
+                display: flex;
+                flex-direction: column;
+                margin-right: 20px;
+            }
+
+            .form__label {
+                font-size: 14px;
+                font-weight: 400;
+                color: #6e6e6e;
+                width: 170px;
+            }
+
+            .form__inp {
+                width: 170px;
+                height: 40px;
+                border: 1px solid #cccccc;
+            }
+
+            .form__btn {
+                width: 170px;
+                height: 40px;
+                border: 1px solid #ff6212;
+                background-color: #ff6212;
+                color: white;
+                border-radius: 4px;
+            }
+        }
+    }
+
+    .content__result {
+
+        .result__title {
+            font-size: 25px;
+            font-weight: 500;
+            color: #333333;
+            padding: 0;
+            margin-bottom: 40px;
+        }
+
+        .result__row {
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .result__btn {
+            width: 170px;
+            height: 40px;
+            border: 1px solid #ff6212;
+            background-color: #ff6212;
+            color: white;
+            border-radius: 4px;
+        }
+    }
+
+    .calculator__brick {
+
+        .brick__title {
+            color: #333333;
+            font-size: 25px;
+            font-weight: 500;
+            margin-bottom: 40px;
+        }
+
+        .brick__form {
+            display: flex;
+            flex-direction: column;
+
+            .form__group {
+                display: flex;
+                align-items: center;
+                margin-bottom: 20px;
+            }
+
+            .form__round {
+                width: 30px;
+                height: 30px;
+                border: 2px solid #ff6212;
+                border-radius: 50%;
+                color: #ff6212;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-right: 15px;
+            }
+
+            .form__label {
+                font-size: 16px;
+                color: #333333;
+                font-weight: 400;
+                width: 270px;
+                margin-right: 45px;
+            }
+
+            .form__inp {
+                width: 170px;
+                height: 40px;
+                border: 1px solid #cccccc;
+                margin-right: 5px;
+            }
+
+            .form__check {
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+            }
+
+            .check__label {
+                color: #333333;
+                font-size: 16px;
+                font-weight: 400;
+                margin-right: 15px;
+            }
+
+            .check__checkbox {
+                width: 30px;
+                height: 30px;
+                border: 1px solid #cccccc;
+            }
+
+            .form__row {
+                display: flex;
+                justify-content: flex-end;
+            }
+
+            .form__btn {
+                width: 170px;
+                height: 40px;
+                border: 1px solid #ff6212;
+                background-color: #ff6212;
+                color: white;
+                border-radius: 4px;
+                margin-top: 30px;
+                margin-bottom: 60px;
+            }
+        }
+    }
+
+    .brick__img {
+        margin-top: 40px;
+    }
+
+    .results {
+
+
+        .results__title {
+            color: #333333;
+            font-size: 25px;
+            font-weight: 500;
+            margin-bottom: 50px;
+        }
+    }
+}
