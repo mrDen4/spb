@@ -760,3 +760,139 @@ p > a:hover {
       color: #333333;
       font-size: 20px;
       text-decoration: underline; }
+
+.delivery .delivery__title {
+  margin: 70px 0 20px 0;
+  text-align: center; }
+
+.delivery .delivery__text {
+  color: #333333;
+  margin: 0;
+  text-align: center; }
+
+.delivery .delivery__type {
+  display: flex;
+  flex-direction: column; }
+
+.delivery .type__title {
+  color: #333333;
+  font-size: 25px;
+  font-weight: 500;
+  margin: 0;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  padding: 0; }
+
+.delivery .type__content {
+  display: flex;
+  margin-bottom: 80px; }
+  .delivery .type__content .content__left {
+    width: 50%;
+    display: flex;
+    flex-direction: column; }
+  .delivery .type__content .left__blocks {
+    display: flex;
+    width: 100%; }
+    .delivery .type__content .left__blocks .block__text {
+      height: 80px;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .delivery .type__content .left__blocks .block__text p {
+        max-width: 130px;
+        text-align: center; }
+    .delivery .type__content .left__blocks .blocks__block {
+      width: 50%;
+      margin-right: 20px;
+      margin-bottom: 20px;
+      height: 130px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      border: 1px solid #cccccc; }
+      .delivery .type__content .left__blocks .blocks__block p {
+        margin: 0; }
+    .delivery .type__content .left__blocks .block__price {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      width: 100%;
+      background-color: #ededed;
+      height: 51px; }
+      .delivery .type__content .left__blocks .block__price .price__price {
+        font-size: 20px;
+        font-weight: 700; }
+  .delivery .type__content .left__text, .delivery .type__content .right__text {
+    width: 380px; }
+    .delivery .type__content .left__text span, .delivery .type__content .right__text span {
+      color: #ff6212;
+      font-size: 18px;
+      font-weight: 500; }
+  .delivery .type__content .content__right {
+    width: 50%;
+    display: flex;
+    flex-direction: column; }
+  .delivery .type__content .right__blocks {
+    display: flex;
+    width: 100%; }
+    .delivery .type__content .right__blocks .blocks__block {
+      width: 50%;
+      margin-right: 20px;
+      margin-bottom: 20px;
+      height: 130px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      border: 1px solid #cccccc; }
+      .delivery .type__content .right__blocks .blocks__block p {
+        margin: 0; }
+    .delivery .type__content .right__blocks .block__text {
+      height: 80px;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .delivery .type__content .right__blocks .block__text p {
+        max-width: 130px;
+        text-align: center; }
+    .delivery .type__content .right__blocks .block__price {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      width: 100%;
+      background-color: #ededed;
+      height: 51px; }
+      .delivery .type__content .right__blocks .block__price .price__price {
+        font-size: 20px;
+        font-weight: 700; }
+  .delivery .type__content .type__block {
+    display: flex;
+    flex-direction: column;
+    height: 130px;
+    width: 280px;
+    justify-content: space-between;
+    border: 1px solid #cccccc;
+    margin-right: 20px; }
+    .delivery .type__content .type__block .block__price {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      width: 100%;
+      background-color: #ededed;
+      height: 51px; }
+      .delivery .type__content .type__block .block__price .price__price {
+        font-size: 20px;
+        font-weight: 700; }
+    .delivery .type__content .type__block .block__text {
+      height: 80px;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .delivery .type__content .type__block .block__text p {
+        text-align: center; }
+  .delivery .type__content .type__text {
+    max-width: 370px;
+    margin-right: 20px; }
+    .delivery .type__content .type__text span {
+      color: #ff6212;
+      font-size: 18px;
+      font-weight: 500; }
