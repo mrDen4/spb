@@ -11,10 +11,18 @@
         display: flex;
         justify-content: center;
         align-items: center;
+
+        @include phones() {
+            padding: 0;
+        }
     }
 
     .about__item {
         margin-right: 50px;
+
+        @include phones() {
+            margin-right: 20px;
+        }
 
         &:last-child {
             margin-right: 0;
@@ -22,14 +30,16 @@
     }
 
     .price__list {
-        list-style: none;
-    }
-
-    .price__list {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        list-style: none;
         align-items: center;
+
+        @include phones() {
+            padding: 0;
+            width: 100%;
+        }
     }
 
     .price__item {
@@ -37,6 +47,10 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+
+        @include phones() {
+            width: 100%;
+        }
     }
 
     .price__block {
@@ -47,12 +61,20 @@
         padding-top: 40px;
         padding-bottom: 40px;
         width: 630px;
+
+        @include phones() {
+            width: 100%;
+        }
     }
 
     .item__title {
         font-size: 20px;
         font-weight: 500;
         color: #333333;
+
+        @include phones() {
+            width: 90%;
+        }
     }
 
     .price__btn {
@@ -71,6 +93,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        width: 100%;
 
         .info__btn {
             width: 200px;

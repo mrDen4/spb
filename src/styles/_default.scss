@@ -97,10 +97,18 @@ ol {
     margin-right: -115px;
     color: black;
     opacity: 1;
+    
+    @include phones() {
+        margin-right: -50px;
+    }
 }
 
 .carousel-control .glyphicon-chevron-left{
     margin-left: -115px;
+
+    @include phones() {
+        margin-left: -50px;
+    }
 }
 
 .carousel-control {
@@ -112,6 +120,19 @@ ol {
     background: #ededed;
     padding: 0 150px 55px;
     margin-top: 150px;
+
+    @include phones() {
+        padding: 20px 20px;
+    }
+
+    .container {
+        @include phones() {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
 }
 
 .contact-form h2{
@@ -161,6 +182,13 @@ ol {
     box-sizing: border-box;
     background: #555555;
     padding: 12px 62px 4px;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 .phone {
@@ -276,4 +304,14 @@ p > a:hover{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.callback {
+    @include phones() {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
 }

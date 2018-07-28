@@ -78,9 +78,15 @@ ol {
   margin-right: -115px;
   color: black;
   opacity: 1; }
+  @media screen and (max-width: 480px) {
+    .carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right, .carousel-control .icon-next, .carousel-control .icon-prev {
+      margin-right: -50px; } }
 
 .carousel-control .glyphicon-chevron-left {
   margin-left: -115px; }
+  @media screen and (max-width: 480px) {
+    .carousel-control .glyphicon-chevron-left {
+      margin-left: -50px; } }
 
 .carousel-control {
   margin-top: -50px; }
@@ -90,6 +96,15 @@ ol {
   background: #ededed;
   padding: 0 150px 55px;
   margin-top: 150px; }
+  @media screen and (max-width: 480px) {
+    .contact-form {
+      padding: 20px 20px; } }
+  @media screen and (max-width: 480px) {
+    .contact-form .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; } }
 
 .contact-form h2 {
   margin-top: -85px;
@@ -131,6 +146,11 @@ ol {
   box-sizing: border-box;
   background: #555555;
   padding: 12px 62px 4px; }
+  .copyright .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
 
 .phone {
   font-size: 20px;
@@ -224,6 +244,13 @@ p > a:hover {
   align-items: center;
   justify-content: center; }
 
+@media screen and (max-width: 480px) {
+  .callback {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; } }
+
 .product__another {
   position: relative; }
 
@@ -231,6 +258,10 @@ p > a:hover {
   display: flex;
   align-items: center;
   justify-content: center; }
+  @media screen and (max-width: 480px) {
+    .another__slider {
+      width: 100%;
+      padding: 20px; } }
 
 .another__slide {
   display: flex;
@@ -320,6 +351,11 @@ p > a:hover {
   z-index: 999;
   right: -20px;
   bottom: 200px; }
+  @media screen and (max-width: 480px) {
+    .next__btn {
+      right: 0;
+      width: 50px;
+      height: 50px; } }
 
 .prev__btn {
   width: 70px;
@@ -331,6 +367,11 @@ p > a:hover {
   z-index: 999;
   bottom: 200px;
   left: -40px; }
+  @media screen and (max-width: 480px) {
+    .prev__btn {
+      left: 0;
+      width: 50px;
+      height: 50px; } }
 
 .subcategory__card {
   display: flex;
@@ -377,8 +418,14 @@ p > a:hover {
 .about__icon {
   width: 160px; }
 
+.about__row {
+  width: 100%; }
+
 .about__img {
   width: 695px; }
+  @media screen and (max-width: 480px) {
+    .about__img {
+      width: 100%; } }
 
 .about__title {
   text-align: center; }
@@ -387,6 +434,10 @@ p > a:hover {
   display: flex;
   justify-content: center;
   margin-bottom: 50px; }
+  @media screen and (max-width: 480px) {
+    .about__row {
+      flex-direction: column;
+      align-items: center; } }
   .about__row p {
     margin-bottom: 35px; }
     .about__row p:last-child {
@@ -426,6 +477,9 @@ p > a:hover {
       margin-bottom: 20px; }
       .calculator .calculator__concrete .concrete__form .form__group:nth-child(2) {
         margin-right: 0; }
+      @media screen and (max-width: 480px) {
+        .calculator .calculator__concrete .concrete__form .form__group {
+          margin-right: 0; } }
     .calculator .calculator__concrete .concrete__form .form__label {
       font-size: 14px;
       font-weight: 400;
@@ -449,9 +503,16 @@ p > a:hover {
     width: 50%;
     height: 173px;
     background-color: #ededed; }
+    @media screen and (max-width: 480px) {
+      .calculator .calculator__concrete .concrete__answ {
+        margin-left: 10px; } }
     .calculator .calculator__concrete .concrete__answ .answ__result {
       font-size: 35px;
       font-weight: 400; }
+      @media screen and (max-width: 480px) {
+        .calculator .calculator__concrete .concrete__answ .answ__result {
+          font-size: 28px;
+          text-align: center; } }
 
 .calculator .calculator__blocks {
   padding-top: 60px;
@@ -467,19 +528,33 @@ p > a:hover {
     display: flex;
     align-items: flex-end;
     justify-content: center; }
+    @media screen and (max-width: 480px) {
+      .calculator .calculator__blocks .calc__form {
+        flex-direction: column;
+        align-items: center; } }
     .calculator .calculator__blocks .calc__form .form__group {
       display: flex;
       flex-direction: column;
       margin-right: 20px; }
+      @media screen and (max-width: 480px) {
+        .calculator .calculator__blocks .calc__form .form__group {
+          margin-right: 0;
+          width: 90%; } }
     .calculator .calculator__blocks .calc__form .form__label {
       font-size: 14px;
       font-weight: 400;
       color: #6e6e6e;
       width: 170px; }
+      @media screen and (max-width: 480px) {
+        .calculator .calculator__blocks .calc__form .form__label {
+          width: 100%; } }
     .calculator .calculator__blocks .calc__form .form__inp {
       width: 170px;
       height: 40px;
       border: 1px solid #cccccc; }
+      @media screen and (max-width: 480px) {
+        .calculator .calculator__blocks .calc__form .form__inp {
+          width: 100%; } }
     .calculator .calculator__blocks .calc__form .form__btn {
       width: 170px;
       height: 40px;
@@ -487,6 +562,9 @@ p > a:hover {
       background-color: #ff6212;
       color: white;
       border-radius: 4px; }
+      @media screen and (max-width: 480px) {
+        .calculator .calculator__blocks .calc__form .form__btn {
+          margin-top: 20px; } }
 
 .calculator .content__result .result__title {
   font-size: 25px;
@@ -531,17 +609,26 @@ p > a:hover {
     align-items: center;
     justify-content: center;
     margin-right: 15px; }
+    @media screen and (max-width: 480px) {
+      .calculator .calculator__brick .brick__form .form__round {
+        margin-right: 5px; } }
   .calculator .calculator__brick .brick__form .form__label {
     font-size: 16px;
     color: #333333;
     font-weight: 400;
     width: 270px;
     margin-right: 45px; }
+    @media screen and (max-width: 480px) {
+      .calculator .calculator__brick .brick__form .form__label {
+        margin-right: 10px; } }
   .calculator .calculator__brick .brick__form .form__inp {
     width: 170px;
     height: 40px;
     border: 1px solid #cccccc;
     margin-right: 5px; }
+    @media screen and (max-width: 480px) {
+      .calculator .calculator__brick .brick__form .form__inp {
+        width: 70px; } }
   .calculator .calculator__brick .brick__form .form__check {
     display: flex;
     justify-content: flex-end;
@@ -587,26 +674,37 @@ p > a:hover {
   display: flex;
   justify-content: center;
   align-items: center; }
+  @media screen and (max-width: 480px) {
+    .price .about__list {
+      padding: 0; } }
 
 .price .about__item {
   margin-right: 50px; }
+  @media screen and (max-width: 480px) {
+    .price .about__item {
+      margin-right: 20px; } }
   .price .about__item:last-child {
     margin-right: 0; }
-
-.price .price__list {
-  list-style: none; }
 
 .price .price__list {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  list-style: none;
   align-items: center; }
+  @media screen and (max-width: 480px) {
+    .price .price__list {
+      padding: 0;
+      width: 100%; } }
 
 .price .price__item {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center; }
+  @media screen and (max-width: 480px) {
+    .price .price__item {
+      width: 100%; } }
 
 .price .price__block {
   display: flex;
@@ -616,11 +714,17 @@ p > a:hover {
   padding-top: 40px;
   padding-bottom: 40px;
   width: 630px; }
+  @media screen and (max-width: 480px) {
+    .price .price__block {
+      width: 100%; } }
 
 .price .item__title {
   font-size: 20px;
   font-weight: 500;
   color: #333333; }
+  @media screen and (max-width: 480px) {
+    .price .item__title {
+      width: 90%; } }
 
 .price .price__btn {
   width: 50px;
@@ -636,7 +740,8 @@ p > a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  width: 100%; }
   .price .price__info .info__btn {
     width: 200px;
     height: 51px;
@@ -663,6 +768,10 @@ p > a:hover {
   height: 450px; }
   .foam .foam__img .img__img {
     width: 100%; }
+  @media screen and (max-width: 480px) {
+    .foam .foam__img {
+      width: 100%;
+      height: inherit; } }
 
 .foam .foam__subtitle {
   margin: 140px 0 80px 0;
@@ -678,10 +787,19 @@ p > a:hover {
     width: 100%;
     display: flex;
     justify-content: space-around; }
+    @media screen and (max-width: 480px) {
+      .foam .foam__apply .apply__list {
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 0; } }
   .foam .foam__apply .apply__item {
     width: 170px;
     display: flex;
     flex-direction: column; }
+    @media screen and (max-width: 480px) {
+      .foam .foam__apply .apply__item {
+        margin-bottom: 20px;
+        width: 150px; } }
     .foam .foam__apply .apply__item a {
       color: #333333;
       text-decoration: underline;
@@ -692,6 +810,10 @@ p > a:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around; }
+  @media screen and (max-width: 480px) {
+    .foam .foam__plus .plus__list {
+      align-items: center;
+      padding: 0; } }
 
 .foam .foam__plus .plus__item {
   width: 185px;
@@ -699,6 +821,10 @@ p > a:hover {
   flex-direction: column;
   align-items: center;
   justify-content: center; }
+  @media screen and (max-width: 480px) {
+    .foam .foam__plus .plus__item {
+      width: 150px;
+      margin-bottom: 20px; } }
   .foam .foam__plus .plus__item a {
     color: #333333;
     text-decoration: underline;
@@ -706,15 +832,19 @@ p > a:hover {
     margin-top: 30px;
     text-align: center; }
 
-.foam .foam__compare .compare__list {
-  display: flex;
-  flex-wrap: wrap; }
-
-.foam .foam__compare .compare__img {
-  display: flex;
-  flex-direction: column; }
-  .foam .foam__compare .compare__img .img__list {
-    display: flex; }
+.foam .foam__compare {
+  width: 100%; }
+  .foam .foam__compare .compare__list {
+    display: flex;
+    flex-wrap: wrap; }
+  .foam .foam__compare .compare__img {
+    display: flex;
+    flex-direction: column; }
+    @media screen and (max-width: 480px) {
+      .foam .foam__compare .compare__img {
+        width: 100%; } }
+    .foam .foam__compare .compare__img .img__list {
+      display: flex; }
 
 .foam .foam__compare {
   display: flex;
@@ -731,6 +861,9 @@ p > a:hover {
     list-style: none;
     align-items: center;
     margin-bottom: 60px; }
+    @media screen and (max-width: 480px) {
+      .foam .foam__compare .compare__list {
+        width: 100%; } }
   .foam .foam__compare .compare__item {
     width: 50%;
     display: flex;
@@ -786,10 +919,16 @@ p > a:hover {
 .delivery .type__content {
   display: flex;
   margin-bottom: 80px; }
+  @media screen and (max-width: 480px) {
+    .delivery .type__content {
+      flex-direction: column; } }
   .delivery .type__content .content__left {
     width: 50%;
     display: flex;
     flex-direction: column; }
+    @media screen and (max-width: 480px) {
+      .delivery .type__content .content__left {
+        width: 100%; } }
   .delivery .type__content .left__blocks {
     display: flex;
     width: 100%; }
@@ -824,6 +963,9 @@ p > a:hover {
         font-weight: 700; }
   .delivery .type__content .left__text, .delivery .type__content .right__text {
     width: 380px; }
+    @media screen and (max-width: 480px) {
+      .delivery .type__content .left__text, .delivery .type__content .right__text {
+        width: 100%; } }
     .delivery .type__content .left__text span, .delivery .type__content .right__text span {
       color: #ff6212;
       font-size: 18px;
@@ -832,6 +974,9 @@ p > a:hover {
     width: 50%;
     display: flex;
     flex-direction: column; }
+    @media screen and (max-width: 480px) {
+      .delivery .type__content .content__right {
+        width: 100%; } }
   .delivery .type__content .right__blocks {
     display: flex;
     width: 100%; }

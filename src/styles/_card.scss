@@ -6,6 +6,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @include phones() {
+        width: 100%;
+        padding: 20px;
+    }
 }
 
 .another__slide{
@@ -121,6 +126,12 @@
     z-index: 999;
     right: -20px;
     bottom: 200px;
+
+    @include phones() {
+        right: 0;
+        width: 50px;
+        height: 50px;
+    }
 }
 
 .prev__btn {
@@ -133,4 +144,10 @@
     z-index: 999;
     bottom: 200px;
     left: -40px;
+
+    @include phones() {
+        left: 0;
+        width: 50px;
+        height: 50px;
+    }
 }

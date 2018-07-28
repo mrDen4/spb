@@ -30,10 +30,18 @@
         display: flex;
         margin-bottom: 80px;
 
+        @include phones() {
+            flex-direction: column;
+        }
+
         .content__left {
             width: 50%;
             display: flex;
             flex-direction: column;
+
+            @include phones() {
+                width: 100%;
+            }
         }
 
         .left__blocks {
@@ -85,6 +93,10 @@
         .left__text {
             width: 380px;
 
+            @include phones() {
+                width: 100%;
+            }
+
             span {
                 color: #ff6212;
                 font-size: 18px;
@@ -96,6 +108,10 @@
             width: 50%;
             display: flex;
             flex-direction: column;
+
+            @include phones() {
+                width: 100%;
+            }
         }
 
         .right__blocks {
