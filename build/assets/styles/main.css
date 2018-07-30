@@ -1,8 +1,19 @@
+body {
+  overflow-x: hidden; }
+
+@media screen and (max-width: 480px) {
+  h2 {
+    padding: 70px 0 0 0 !important; } }
+
 nav {
   height: 40px; }
 
 .navbar {
   min-height: 0; }
+  @media screen and (max-width: 480px) {
+    .navbar {
+      margin-bottom: 0;
+      width: 50px; } }
 
 .nav > li > a {
   padding: 9px 15px; }
@@ -10,9 +21,16 @@ nav {
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
   background-color: #ededed;
   color: black; }
+  @media screen and (max-width: 480px) {
+    .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+      background: none; } }
 
 .navbar-default {
   background-color: #ededed; }
+  @media screen and (max-width: 480px) {
+    .navbar-default {
+      background: none;
+      border: none; } }
 
 .navbar-default .navbar-nav > li > a {
   color: black; }
@@ -48,9 +66,15 @@ h1 {
 
 .carousel-control.right {
   background-image: none; }
+  @media screen and (max-width: 480px) {
+    .carousel-control.right {
+      display: none; } }
 
 .carousel-control.left {
   background-image: none; }
+  @media screen and (max-width: 480px) {
+    .carousel-control.left {
+      display: none; } }
 
 ol {
   margin-bottom: -60px; }
@@ -251,6 +275,10 @@ p > a:hover {
     align-items: center;
     justify-content: center; } }
 
+@media screen and (max-width: 480px) {
+  .callback .callback__block {
+    margin-bottom: 20px; } }
+
 .product__another {
   position: relative; }
 
@@ -410,10 +438,39 @@ p > a:hover {
 .subcategory__title {
   padding: 0; }
 
-.header__nav {
-  display: flex;
-  align-items: center;
-  justify-content: center; }
+@media screen and (max-width: 480px) {
+  .header__desk {
+    display: none; } }
+
+.header__mob {
+  width: 100vw;
+  margin-bottom: 40px;
+  display: none;
+  border-bottom: 2px solid #b9b9b9; }
+  @media screen and (max-width: 480px) {
+    .header__mob {
+      display: inherit; } }
+  .header__mob .header__nav {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .header__mob .header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .header__mob .basket__link {
+    border: 2px solid #ff6212;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 44px; }
+    .header__mob .basket__link .link__icon {
+      margin-right: 10px; }
+  .header__mob .navbar-toggle {
+    float: none;
+    margin: 0; }
 
 .about__icon {
   width: 160px; }

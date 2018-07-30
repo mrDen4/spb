@@ -1,3 +1,13 @@
+body {
+    overflow-x: hidden;
+}
+
+h2 {
+    @include phones() {
+        padding: 70px 0 0 0 !important;
+    }
+}
+
 
 nav {
     height: 40px;
@@ -5,6 +15,11 @@ nav {
 
 .navbar {
     min-height: 0;
+
+    @include phones() {
+        margin-bottom: 0;
+        width: 50px;    
+    }
 }
 
 .nav > li > a {
@@ -14,10 +29,19 @@ nav {
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
     background-color: #ededed;
     color: black;
+
+    @include phones() {
+        background: none;
+    }
 }
 
 .navbar-default {
     background-color: #ededed;
+
+    @include phones() {
+        background: none;
+        border: none;
+    }
 }
 
 .navbar-default .navbar-nav > li > a {
@@ -62,10 +86,18 @@ h1{
 
 .carousel-control.right {
     background-image: none;
+
+    @include phones() {
+        display: none;
+    }
 }
 
 .carousel-control.left {
     background-image: none;
+
+    @include phones() {
+        display: none;
+    }
 }
 
 ol {
@@ -312,6 +344,13 @@ p > a:hover{
         flex-direction: column;
         align-items: center;
         justify-content: center;
+    }
+
+    .callback__block {
+
+        @include phones() {
+            margin-bottom: 20px;
+        }
     }
 
 }

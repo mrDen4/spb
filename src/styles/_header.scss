@@ -1,5 +1,47 @@
-.header__nav {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.header__desk {
+    @include phones() {
+        display: none;
+    }
 }
+
+.header__mob {
+    width: 100vw;
+    margin-bottom: 40px;
+    display: none;
+    border-bottom: 2px solid rgb(185, 185, 185);
+
+    @include phones() {
+        display: inherit;
+    }
+        .header__nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .basket__link {
+        border: 2px solid #ff6212;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        height: 44px;
+        
+        .link__icon {
+            margin-right: 10px;
+        }
+    }
+
+    .navbar-toggle {
+        float: none;
+        margin: 0;
+    }
+}
+

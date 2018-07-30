@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <header>
+    <header class="header__desk">
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
@@ -20,7 +20,8 @@
                 </div>
                 <div class="col-md-4">
                     <a href="cart.php" class="card text-center basket">
-                        <span class="glyphicon glyphicon-shopping-cart" style="margin-right: 10px;"> </span> <span style="color: black; margin-right: 5px;">Корзина</span>  (0)
+                        <span class="glyphicon glyphicon-shopping-cart" style="margin-right: 10px;"> </span>
+                        <span style="color: black; margin-right: 5px;">Корзина</span> (0)
                     </a>
                 </div>
                 <div class="col-md-2">
@@ -121,6 +122,108 @@
                 </div>
             </div>
         </nav>
+    </header>
+    <header class="header__mob">
+        <div class="container header__container">
+            <div class="header__basket">
+                <a href="cart.php" class="card text-center basket__link">
+                    <span class="glyphicon glyphicon-shopping-cart"> </span>
+                </a>
+            </div>
+            <div class="header__logo">
+                <a href="index.php">
+                    <img src="./assets/images/logo.png" alt="СтройПеноБетон" height="50px">
+                </a>
+            </div>
+            <nav class="navbar navbar-default" role="navigation">
+                <div class="container">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-mobile">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="collapse navbar-collapse" id="navbar-mobile">
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Каталог
+                                    <b class="caret"></b>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="">Перемычки</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Перемычки для пенобетона</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Бетон товарный БСТ</a>
+                                    </li>
+                                    <li>
+                                        <a href="">ОБетон мелкозернистый БМЗ</a>
+                                    </li>
+                                    <li>
+                                        <a href="">ФБС фундаментный блок</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Раствор кладочный</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Кирпич рядовой</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Кирпич лицевой</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Цемент, сухие смеси</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Сыпучие материалы</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Сетка кладочная</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Плиты перекрытия ПК</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Перемычки ПБ</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="penobeton.php">Пенобетон</a>
+                            </li>
+                            <li>
+                                <a href="object.php">Объекты</a>
+                            </li>
+                            <li>
+                                <a href="price.php">Цены</a>
+                            </li>
+                            <li>
+                                <a href="calculator.php">Калькуляторы</a>
+                            </li>
+                            <li>
+                                <a href="about.php">Компания</a>
+                            </li>
+                            <li>
+                                <a href="delivery.php">Доставка</a>
+                            </li>
+                            <li>
+                                <a href="documentation.php">Документация</a>
+                            </li>
+                            <li>
+                                <a href="contacts.php">Контакты</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
     </header>
 
     <main>
@@ -282,25 +385,25 @@
                 <form action="" class="row">
                     <div class="row callback">
 
-                        <div class="col-md-3">
+                        <div class="col-md-3 callback__block">
                             <div class="input-group">
                                 <input type="text" class="form-control" name="username" placeholder="Ваше имя">
                             </div>
                         </div>
-
-                        <div class="col-md-3">
+ 
+                        <div class="col-md-3 callback__block">
                             <div class="input-group">
                                 <input type="text" class="form-control" name="userphone" placeholder="Ваш телефон">
                             </div>
                         </div>
 
-                        <div class="col-md-3">
+                        <div class="col-md-3 callback__block">
                             <div class="input-group">
                                 <input type="text" class="form-control" name="usermail" placeholder="Ваш email">
                             </div>
                         </div>
 
-                        <div class="col-md-3">
+                        <div class="col-md-3 callback__block">
                             <div class="input-group">
                                 <input type="submit" class="form-control btn" value="Отправить &rarr;">
                             </div>
