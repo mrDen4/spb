@@ -47,7 +47,7 @@
 
 .header {
     margin-bottom: 30px;
-    
+
     .top__container {
         display: flex;
         flex-direction: row;
@@ -153,6 +153,7 @@
             width: 11%;
             justify-content: center;
             cursor: pointer;
+            position: relative;
 
             &:hover {
                 background-color: #d5d5d5;
@@ -161,11 +162,41 @@
             .item__link {
                 margin: 0;
                 color: black;
+                text-decoration: none;
 
                 &:hover {
                     color: black;
                     text-decoration: none;
                 }
+            }
+
+            .item__catalog {
+                display: none;
+                flex-direction: column;
+                width: 230px;
+                position: absolute;
+                height: 320px;
+                bottom: -320px;
+                left: 0;
+                padding: 0;
+                z-index: 999;
+                list-style: none;
+                background: white;
+                border: 1px solid #cccccc;
+                overflow: hidden;
+                transition: .2s;
+
+                .catalog__item {
+                    padding: 10px;
+
+                    &:hover {
+                        background-color: #d5d5d5;                        
+                    }
+                }
+            }
+
+            .item__catalog--active {
+                display: flex;
             }
         }
     }

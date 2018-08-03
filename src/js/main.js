@@ -1,7 +1,19 @@
-$('.index__card').on('click', function() {
-  $('.card__menu').css('height', '100px');
-  $('.card__menu').css('padding', '10px');
+$('.index__card').on('click', function(event) {
+  $(event.target).children('.card__menu').toggleClass('card__menu--active');
+  event.preventDefault();
+  event.stopPropagation();
 })
+
+$('.index__card img').on('click', function(event) {
+  console.log('img');
+  $(event.target).next('.card__menu').toggleClass('card__menu--active');
+  event.preventDefault();
+  event.stopPropagation();
+})
+
+$('.bot__item--catalog').on('click', function() {
+  $('.item__catalog').toggleClass('item__catalog--active');
+});
 
 $('.another__slider').slick({
     infinite: true,

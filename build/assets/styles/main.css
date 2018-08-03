@@ -313,6 +313,10 @@ p > a:hover {
     opacity: 0.7;
     text-decoration: underline; }
 
+.card__menu--active {
+  height: 100px;
+  padding: 10px; }
+
 .product__another {
   position: relative; }
 
@@ -549,15 +553,38 @@ p > a:hover {
       padding: 10px 0;
       width: 11%;
       justify-content: center;
-      cursor: pointer; }
+      cursor: pointer;
+      position: relative; }
       .header .bot__list .bot__item:hover {
         background-color: #d5d5d5; }
       .header .bot__list .bot__item .item__link {
         margin: 0;
-        color: black; }
+        color: black;
+        text-decoration: none; }
         .header .bot__list .bot__item .item__link:hover {
           color: black;
           text-decoration: none; }
+      .header .bot__list .bot__item .item__catalog {
+        display: none;
+        flex-direction: column;
+        width: 230px;
+        position: absolute;
+        height: 320px;
+        bottom: -320px;
+        left: 0;
+        padding: 0;
+        z-index: 999;
+        list-style: none;
+        background: white;
+        border: 1px solid #cccccc;
+        overflow: hidden;
+        transition: .2s; }
+        .header .bot__list .bot__item .item__catalog .catalog__item {
+          padding: 10px; }
+          .header .bot__list .bot__item .item__catalog .catalog__item:hover {
+            background-color: #d5d5d5; }
+      .header .bot__list .bot__item .item__catalog--active {
+        display: flex; }
 
 .about__icon {
   width: 160px; }
