@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <header class="header__desk">
+    <!-- <header class="header__desk">
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
@@ -224,6 +224,63 @@
                 </div>
             </nav>
         </div>
+    </header> -->
+    <header class="header">
+        <div class="header__top">
+            <div class="container top__container">
+                <img src="./assets/images/logo.png" alt="logo" class="top__logo">
+                <button class="top__basket">
+                    <img src="./assets/images/basket.png" alt="#" class="basket__img">
+                    <p class="basket__text">Корзина
+                        <span class="text__col"> (0)</span>
+                    </p>
+                </button>
+                <div class="top__callback">
+                    <div class="callback__adress">
+                        <p>г. Челябинск,</p>
+                        <p>ул. Складская, д. 1</p>
+                    </div>
+                    <div class="callback__call">
+                        <a href="tel:+73512580500" class="call__text">+7 (351) 258-05-00</a>
+                        <button class="call__btn">Заказать звонок</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header__bot">
+            <div class="container">
+                <ul class="bot__list">
+                    <li class="bot__item">
+                        <a href="#" class="item__link">Каталог</a>
+                    </li>
+                    <li class="bot__item">
+                        <a href="#" class="item__link">Пенобетон</a>
+                    </li>
+                    <li class="bot__item">
+                        <a href="#" class="item__link">Документы</a>
+                    </li>
+                    <li class="bot__item">
+                        <a href="#" class="item__link">Цены</a>
+                    </li>
+                    <li class="bot__item">
+                        <a href="#" class="item__link">Калькуляторы</a>
+                    </li>
+                    <li class="bot__item">
+                        <a href="#" class="item__link">Компания</a>
+                    </li>
+                    <li class="bot__item">
+                        <a href="#" class="item__link">Доставка</a>
+                    </li>
+                    <li class="bot__item">
+                        <a href="#" class="item__link">Документация</a>
+                    </li>
+                    <li class="bot__item">
+                        <a href="#" class="item__link">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        </div>
     </header>
 
     <main>
@@ -278,26 +335,56 @@
             </div>
             <h2 class="text-center">Категории</h2>
             <div class="row">
-                <a href="catalog.php?type=foamconcrete">
-                    <div class="col-sm-6 col-md-3">
-                        <div class="thumbnail">
-                            <img src="./assets/images/penoblock_1.jpg" alt="Перемычки">
-                            <div class="caption">
-                                <h4>Перемычки</h4>
-                            </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="thumbnail index__card">
+                        <img src="./assets/images/penoblock_1.jpg" alt="Перемычки">
+                        <div class="caption">
+                            <h4 class="caption__title">Перемычки</h4>
                         </div>
+                        <ul class="card__menu">
+                            <li class="menu__item">
+                                <a href="#" class="item__link">Пеноблоки</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="item__link">Керамзитоблоки</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="item__link">Шлакоблоки</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="item__link">Керамзитоблоки</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="item__link">Полистеролбетонные блоки</a>
+                            </li>
+                        </ul>
                     </div>
-                </a>
-                <a href="catalog.php?type=peremichki_dly_penobloka">
-                    <div class="col-sm-6 col-md-3">
-                        <div class="thumbnail">
-                            <img src="./assets/images/tow_concrete_1.jpg" alt="Бетон">
-                            <div class="caption">
-                                <h4>Бетон</h4>
-                            </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="thumbnail index__card">
+                        <img src="./assets/images/tow_concrete_1.jpg" alt="Бетон">
+                        <div class="caption">
+                            <h4>Бетон</h4>
                         </div>
+                        <ul class="card__menu">
+                            <li class="menu__item">
+                                <a href="#" class="item__link">Пеноблоки</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="item__link">Керамзитоблоки</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="item__link">Шлакоблоки</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="item__link">Керамзитоблоки</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="item__link">Полистеролбетонные блоки</a>
+                            </li>
+                        </ul>
                     </div>
-                </a>
+                </div>
                 <a href="catalog.php?type=beton_tovarnij">
                     <div class="col-sm-6 col-md-3">
                         <div class="thumbnail">
@@ -390,7 +477,7 @@
                                 <input type="text" class="form-control" name="username" placeholder="Ваше имя">
                             </div>
                         </div>
- 
+
                         <div class="col-md-3 callback__block">
                             <div class="input-group">
                                 <input type="text" class="form-control" name="userphone" placeholder="Ваш телефон">
@@ -473,6 +560,7 @@
     </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="./assets/scripts/main.js"></script>
     <script src="https://netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 </body>
 
