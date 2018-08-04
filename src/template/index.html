@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <header>
+    <!-- <header class="header__desk">
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
@@ -20,7 +20,8 @@
                 </div>
                 <div class="col-md-4">
                     <a href="cart.php" class="card text-center basket">
-                        <span class="glyphicon glyphicon-shopping-cart" style="margin-right: 10px;"> </span> <span style="color: black; margin-right: 5px;">Корзина</span>  (0)
+                        <span class="glyphicon glyphicon-shopping-cart" style="margin-right: 10px;"> </span>
+                        <span style="color: black; margin-right: 5px;">Корзина</span> (0)
                     </a>
                 </div>
                 <div class="col-md-2">
@@ -122,6 +123,191 @@
             </div>
         </nav>
     </header>
+    <header class="header__mob">
+        <div class="container header__container">
+            <div class="header__basket">
+                <a href="cart.php" class="card text-center basket__link">
+                    <span class="glyphicon glyphicon-shopping-cart"> </span>
+                </a>
+            </div>
+            <div class="header__logo">
+                <a href="index.php">
+                    <img src="./assets/images/logo.png" alt="СтройПеноБетон" height="50px">
+                </a>
+            </div>
+            <nav class="navbar navbar-default" role="navigation">
+                <div class="container">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-mobile">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="collapse navbar-collapse" id="navbar-mobile">
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Каталог
+                                    <b class="caret"></b>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="">Перемычки</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Перемычки для пенобетона</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Бетон товарный БСТ</a>
+                                    </li>
+                                    <li>
+                                        <a href="">ОБетон мелкозернистый БМЗ</a>
+                                    </li>
+                                    <li>
+                                        <a href="">ФБС фундаментный блок</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Раствор кладочный</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Кирпич рядовой</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Кирпич лицевой</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Цемент, сухие смеси</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Сыпучие материалы</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Сетка кладочная</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Плиты перекрытия ПК</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Перемычки ПБ</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="penobeton.php">Пенобетон</a>
+                            </li>
+                            <li>
+                                <a href="object.php">Объекты</a>
+                            </li>
+                            <li>
+                                <a href="price.php">Цены</a>
+                            </li>
+                            <li>
+                                <a href="calculator.php">Калькуляторы</a>
+                            </li>
+                            <li>
+                                <a href="about.php">Компания</a>
+                            </li>
+                            <li>
+                                <a href="delivery.php">Доставка</a>
+                            </li>
+                            <li>
+                                <a href="documentation.php">Документация</a>
+                            </li>
+                            <li>
+                                <a href="contacts.php">Контакты</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header> -->
+    <header class="header">
+        <div class="header__top">
+            <div class="container top__container">
+                <img src="./assets/images/logo.png" alt="logo" class="top__logo">
+                <button class="top__basket">
+                    <img src="./assets/images/basket.png" alt="#" class="basket__img">
+                    <p class="basket__text">Корзина
+                        <span class="text__col"> (0)</span>
+                    </p>
+                </button>
+                <div class="top__callback">
+                    <div class="callback__adress">
+                        <p>г. Челябинск,</p>
+                        <p>ул. Складская, д. 1</p>
+                    </div>
+                    <div class="callback__call">
+                        <a href="tel:+73512580500" class="call__text">+7 (351) 258-05-00</a>
+                        <button class="call__btn">Заказать звонок</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header__bot">
+            <div class="container">
+                <ul class="bot__list">
+                    <li class="bot__item bot__item--catalog">
+                        <a href="#" class="item__link">Каталог</a>
+                        <ul class="item__catalog">
+                            <li class="catalog__item">
+                                <a href="#" class="item__link">Перемычки</a>
+                            </li>
+                            <li class="catalog__item">
+                                <a href="#" class="item__link">Бетон</a>
+                            </li>
+                            <li class="catalog__item">
+                                <a href="#" class="item__link">Стеновые блоки</a>
+                            </li>
+                            <li class="catalog__item">
+                                <a href="#" class="item__link">Кирпичи</a>
+                            </li>
+                            <li class="catalog__item">
+                                <a href="#" class="item__link">Раствор кладочный</a>
+                            </li>
+                            <li class="catalog__item">
+                                <a href="#" class="item__link">Цемент, сухие смеси</a>
+                            </li>
+                            <li class="catalog__item">
+                                <a href="#" class="item__link">Сетка кладочная</a>
+                            </li>
+                            <li class="catalog__item">
+                                <a href="#" class="item__link">Плиты перекрытия ПК</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="bot__item">
+                        <a href="#" class="item__link">Пенобетон</a>
+                    </li>
+                    <li class="bot__item">
+                        <a href="#" class="item__link">Документы</a>
+                    </li>
+                    <li class="bot__item">
+                        <a href="#" class="item__link">Цены</a>
+                    </li>
+                    <li class="bot__item">
+                        <a href="#" class="item__link">Калькуляторы</a>
+                    </li>
+                    <li class="bot__item">
+                        <a href="#" class="item__link">Компания</a>
+                    </li>
+                    <li class="bot__item">
+                        <a href="#" class="item__link">Доставка</a>
+                    </li>
+                    <li class="bot__item">
+                        <a href="#" class="item__link">Документация</a>
+                    </li>
+                    <li class="bot__item">
+                        <a href="#" class="item__link">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        </div>
+    </header>
 
     <main>
         <div class="container">
@@ -175,26 +361,56 @@
             </div>
             <h2 class="text-center">Категории</h2>
             <div class="row">
-                <a href="catalog.php?type=foamconcrete">
-                    <div class="col-sm-6 col-md-3">
-                        <div class="thumbnail">
-                            <img src="./assets/images/penoblock_1.jpg" alt="Перемычки">
-                            <div class="caption">
-                                <h4>Перемычки</h4>
-                            </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="thumbnail index__card">
+                        <img src="./assets/images/penoblock_1.jpg" alt="Перемычки">
+                        <div class="caption">
+                            <h4 class="caption__title">Перемычки</h4>
                         </div>
+                        <ul class="card__menu">
+                            <li class="menu__item">
+                                <a href="#" class="item__link">Пеноблоки</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="item__link">Керамзитоблоки</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="item__link">Шлакоблоки</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="item__link">Керамзитоблоки</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="item__link">Полистеролбетонные блоки</a>
+                            </li>
+                        </ul>
                     </div>
-                </a>
-                <a href="catalog.php?type=peremichki_dly_penobloka">
-                    <div class="col-sm-6 col-md-3">
-                        <div class="thumbnail">
-                            <img src="./assets/images/tow_concrete_1.jpg" alt="Бетон">
-                            <div class="caption">
-                                <h4>Бетон</h4>
-                            </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="thumbnail index__card">
+                        <img src="./assets/images/tow_concrete_1.jpg" alt="Бетон">
+                        <div class="caption">
+                            <h4>Бетон</h4>
                         </div>
+                        <ul class="card__menu">
+                            <li class="menu__item">
+                                <a href="#" class="item__link">Пеноблоки</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="item__link">Керамзитоблоки</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="item__link">Шлакоблоки</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="item__link">Керамзитоблоки</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="item__link">Полистеролбетонные блоки</a>
+                            </li>
+                        </ul>
                     </div>
-                </a>
+                </div>
                 <a href="catalog.php?type=beton_tovarnij">
                     <div class="col-sm-6 col-md-3">
                         <div class="thumbnail">
@@ -282,25 +498,25 @@
                 <form action="" class="row">
                     <div class="row callback">
 
-                        <div class="col-md-3">
+                        <div class="col-md-3 callback__block">
                             <div class="input-group">
                                 <input type="text" class="form-control" name="username" placeholder="Ваше имя">
                             </div>
                         </div>
 
-                        <div class="col-md-3">
+                        <div class="col-md-3 callback__block">
                             <div class="input-group">
                                 <input type="text" class="form-control" name="userphone" placeholder="Ваш телефон">
                             </div>
                         </div>
 
-                        <div class="col-md-3">
+                        <div class="col-md-3 callback__block">
                             <div class="input-group">
                                 <input type="text" class="form-control" name="usermail" placeholder="Ваш email">
                             </div>
                         </div>
 
-                        <div class="col-md-3">
+                        <div class="col-md-3 callback__block">
                             <div class="input-group">
                                 <input type="submit" class="form-control btn" value="Отправить &rarr;">
                             </div>
@@ -370,6 +586,7 @@
     </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="./assets/scripts/main.js"></script>
     <script src="https://netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 </body>
 
