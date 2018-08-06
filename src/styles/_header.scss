@@ -48,13 +48,26 @@
 .header {
     margin-bottom: 30px;
 
+    @include phones() {
+        padding: 0;
+    }
+
     .top__container {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        min-width: 1170px;
+        max-width: 1170px;
         margin: 0 auto;
+        
+        @include phones() {
+            align-items: flex-start;
+            justify-content: center;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 100%;
+            padding: 0;
+        }
     }
 
     .header__top {
@@ -63,8 +76,27 @@
         align-items: center;
     }
 
-    .top__logo {
+    .top__logo-wrap {
         width: 308px;
+        
+        @include phones() {
+            width: 50%;
+            margin-right: 20px;
+        }
+
+        .top__logo {
+            width: 100%;
+        }
+    }
+
+    .top__adress {
+        display: none;
+
+        @include phones() {
+            display: flex;
+            flex-direction: column;
+            width: 40%;
+        }
     }
 
     .top__basket {
@@ -76,6 +108,10 @@
         justify-content: center;
         align-items: center;
         background: none;
+
+        @include phones() {
+            margin-top: 20px;
+        }
 
         &:hover {
             background: #ffbb98;
@@ -99,23 +135,49 @@
     .top__callback {
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: flex-end;
+        width: 75%;
+        
+        @include phones() {
+            order: -1;
+            width: 100%; 
+            justify-content: flex-start;
+            background-color: #333333;  
+            padding: 5px;
+            margin-bottom: 20px;
+        }
 
         .callback__adress {
             display: flex;
             flex-direction: column;
             margin-right: 20px;
+
+            @include phones() {
+                display: none;
+            }
         }
         
         .callback__call {
             display: flex;
             flex-direction: column;
+
+            @include phones() {
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+            }
         }
 
         .call__text {
             color: #555555;
             font-size: 20px;
             font-weight: 700;
+
+            @include phones() {
+                color: white;
+                margin: 0;
+            }
         }
 
         .call__btn {
@@ -134,6 +196,74 @@
         background-color: #ededed;
         width: 100vw;
         margin-top: 40px;
+
+        @include phones() {
+            // display: none;
+            margin-top: 20px;
+        }
+    }
+
+    .bot__container {
+        @include phones() {
+            display: flex;
+            width: 100%;
+            position: relative;
+        }
+    }
+
+    .bot__humburger {
+        display: none;
+
+        @include phones() {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            right: 15px;
+            top: 5px;
+        }
+
+        .humburger__img {
+            display: none;
+
+            @include phones() {
+                display: inherit;
+                width: 100%;
+            }
+        }
+    }
+
+    .bot__humburger-list {
+        display: none;
+
+        @include phones() {
+            position: absolute;
+            flex-direction: column;
+            list-style: none;
+            border: 1px solid #cccccc;
+            height: 350px;
+            padding: 0;
+            margin: 0;
+            right: 0;
+            bottom: -350px;
+            z-index: 99;
+            width: 150px;
+            background: white;
+        }
+
+        .humburger-list__item {
+            padding: 5px 10px;
+
+            .humburger-list__link {
+                color: #333333;
+            }
+        }
+    }
+
+    .bot__humburger-list--active {
+        display: flex;
     }
 
     .bot__list {
@@ -145,6 +275,10 @@
         padding: 0;
         margin: 0;
 
+        @include phones() {
+            justify-content: flex-start;
+        }
+
         .bot__item {
             height: 100%;
             display: flex;
@@ -155,8 +289,20 @@
             cursor: pointer;
             position: relative;
 
+            @include phones() {
+                display: none;
+            }
+
             &:hover {
                 background-color: #d5d5d5;
+            }
+
+            &--catalog {
+
+                @include phones() {
+                    display: flex;
+                    width: 20%;
+                }
             }
 
             .item__link {

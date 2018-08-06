@@ -11,118 +11,120 @@
 </head>
 
 <body>
-    <header>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <a href="index.php">
-                        <img src="./assets/images/logo.png" alt="СтройПеноБетон" height="50px">
-                    </a>
+    <header class="header">
+        <div class="header__top">
+            <div class="container top__container">
+                <div class="top__logo-wrap">
+                    <img src="./assets/images/logo.png" alt="logo" class="top__logo">
                 </div>
-                <div class="col-md-4">
-                    <a href="cart.php" class="card text-center basket">
-                        <span class="glyphicon glyphicon-shopping-cart" style="margin-right: 10px;"> </span>
-                        <span style="color: black; margin-right: 5px;">Корзина</span> (0)
-                    </a>
+                <div class="top__adress">
+                    <p>г. Челябинск,</p>
+                    <p>ул. Складская, д. 1</p>
                 </div>
-                <div class="col-md-2">
-                    <p>г. Челябинск
-                        <br>ул. Складская, д.1</p>
-                </div>
-                <div class="col-md-2">
-                    <a href="#" class="phone-header">+7 (351) 258-05-00</a>
-                    <a href="#" data-toggle="modal" data-target=".bs-example-modal-sm">Заказать звонок</a>
+                <div class="top__callback">
+                    <div class="callback__adress">
+                        <p>г. Челябинск,</p>
+                        <p>ул. Складская, д. 1</p>
+                    </div>
+                    <div class="callback__call">
+                        <a href="tel:+73512580500" class="call__text">+7 (351) 258-05-00</a>
+                        <button class="call__btn">Заказать звонок</button>
+                    </div>
                 </div>
             </div>
         </div>
-        <nav class="navbar navbar-default" role="navigation">
-            <div class="container">
-                <div class="container-fluid">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-mobile">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                    </div>
+        <div class="header__bot">
+            <div class="container bot__container">
+                <div class="bot__humburger">
+                    <img src="./assets/images/humburger.png" alt="menu" class="humburger__img">
                 </div>
-                <div class="collapse navbar-collapse" id="navbar-mobile">
-                    <ul class="nav navbar-nav">
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Каталог
-                                <b class="caret"></b>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li>
-                                    <a href="">Перемычки</a>
-                                </li>
-                                <li>
-                                    <a href="">Перемычки для пенобетона</a>
-                                </li>
-                                <li>
-                                    <a href="">Бетон товарный БСТ</a>
-                                </li>
-                                <li>
-                                    <a href="">ОБетон мелкозернистый БМЗ</a>
-                                </li>
-                                <li>
-                                    <a href="">ФБС фундаментный блок</a>
-                                </li>
-                                <li>
-                                    <a href="">Раствор кладочный</a>
-                                </li>
-                                <li>
-                                    <a href="">Кирпич рядовой</a>
-                                </li>
-                                <li>
-                                    <a href="">Кирпич лицевой</a>
-                                </li>
-                                <li>
-                                    <a href="">Цемент, сухие смеси</a>
-                                </li>
-                                <li>
-                                    <a href="">Сыпучие материалы</a>
-                                </li>
-                                <li>
-                                    <a href="">Сетка кладочная</a>
-                                </li>
-                                <li>
-                                    <a href="">Плиты перекрытия ПК</a>
-                                </li>
-                                <li>
-                                    <a href="">Перемычки ПБ</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="penobeton.php">Пенобетон</a>
-                        </li>
-                        <li>
-                            <a href="object.php">Объекты</a>
-                        </li>
-                        <li>
-                            <a href="price.php">Цены</a>
-                        </li>
-                        <li>
-                            <a href="calculator.php">Калькуляторы</a>
-                        </li>
-                        <li>
-                            <a href="about.php">Компания</a>
-                        </li>
-                        <li>
-                            <a href="delivery.php">Доставка</a>
-                        </li>
-                        <li>
-                            <a href="documentation.php">Документация</a>
-                        </li>
-                        <li>
-                            <a href="contacts.php">Контакты</a>
-                        </li>
-                    </ul>
-                </div>
+                <ul class="bot__humburger-list">
+                    <li class="humburger-list__item">
+                        <a href="#" class="humburger-list__link">Пенобетон</a>
+                    </li>
+                    <li class="humburger-list__item">
+                        <a href="#" class="humburger-list__link">Бетон</a>
+                    </li>
+                    <li class="humburger-list__item">
+                        <a href="#" class="humburger-list__link">Документы</a>
+                    </li>
+                    <li class="humburger-list__item">
+                        <a href="#" class="humburger-list__link">Цены</a>
+                    </li>
+                    <li class="humburger-list__item">
+                        <a href="#" class="humburger-list__link">Калькуляторы</a>
+                    </li>
+                    <li class="humburger-list__item">
+                        <a href="#" class="humburger-list__link">Компания</a>
+                    </li>
+                    <li class="humburger-list__item">
+                        <a href="#" class="humburger-list__link">Доставка</a>
+                    </li>
+                    <li class="humburger-list__item">
+                        <a href="#" class="humburger-list__link">Документация</a>
+                    </li>
+                    <li class="humburger-list__item">
+                        <a href="#" class="humburger-list__link">Контакты</a>
+                    </li>
+                </ul>
+                <ul class="bot__list">
+                    <li class="bot__item bot__item--catalog">
+                        <a href="#" class="item__link">Каталог</a>
+                        <ul class="item__catalog">
+                            <li class="catalog__item">
+                                <a href="#" class="item__link">Перемычки</a>
+                            </li>
+                            <li class="catalog__item">
+                                <a href="#" class="item__link">Бетон</a>
+                            </li>
+                            <li class="catalog__item">
+                                <a href="#" class="item__link">Стеновые блоки</a>
+                            </li>
+                            <li class="catalog__item">
+                                <a href="#" class="item__link">Кирпичи</a>
+                            </li>
+                            <li class="catalog__item">
+                                <a href="#" class="item__link">Раствор кладочный</a>
+                            </li>
+                            <li class="catalog__item">
+                                <a href="#" class="item__link">Цемент, сухие смеси</a>
+                            </li>
+                            <li class="catalog__item">
+                                <a href="#" class="item__link">Сетка кладочная</a>
+                            </li>
+                            <li class="catalog__item">
+                                <a href="#" class="item__link">Плиты перекрытия ПК</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="bot__item">
+                        <a href="#" class="item__link">Пенобетон</a>
+                    </li>
+                    <li class="bot__item">
+                        <a href="#" class="item__link">Документы</a>
+                    </li>
+                    <li class="bot__item">
+                        <a href="#" class="item__link">Цены</a>
+                    </li>
+                    <li class="bot__item">
+                        <a href="#" class="item__link">Калькуляторы</a>
+                    </li>
+                    <li class="bot__item">
+                        <a href="#" class="item__link">Компания</a>
+                    </li>
+                    <li class="bot__item">
+                        <a href="#" class="item__link">Доставка</a>
+                    </li>
+                    <li class="bot__item">
+                        <a href="#" class="item__link">Документация</a>
+                    </li>
+                    <li class="bot__item">
+                        <a href="#" class="item__link">Контакты</a>
+                    </li>
+                </ul>
             </div>
-        </nav>
+        </div>
+        </div>
     </header>
 
     <main class="foam">
