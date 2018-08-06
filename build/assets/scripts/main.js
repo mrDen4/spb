@@ -15,6 +15,10 @@ $('.bot__item--catalog').on('click', function() {
   $('.item__catalog').toggleClass('item__catalog--active');
 });
 
+$('.bot__humburger').on('click', function() {
+  $('.bot__humburger-list').toggleClass('bot__humburger-list--active');
+});
+
 $('.another__slider').slick({
     infinite: true,
     slidesToShow: 4,
