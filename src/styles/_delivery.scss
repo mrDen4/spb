@@ -24,6 +24,11 @@
         margin-top: 50px;
         margin-bottom: 30px;
         padding: 0;
+
+        @include phones() {
+            margin-top: 20px;
+            padding-top: 0 !important;
+        }
     }
 
     .type__content {

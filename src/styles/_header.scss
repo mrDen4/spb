@@ -177,6 +177,7 @@
             @include phones() {
                 color: white;
                 margin: 0;
+                font-size: 17px;
             }
         }
 
@@ -186,8 +187,12 @@
             border-bottom: 1px solid #ff6212;
             font-size: 16px;
             font-weight: 400;
-            width: 136px;
+            width: 100%;
             background: none;
+
+            @include phones() {
+                width: 50%;
+            }
         }
     }
 
@@ -295,6 +300,10 @@
 
             &:hover {
                 background-color: #d5d5d5;
+
+                @include phones() {
+                    background: none;
+                }
             }
 
             &--catalog {

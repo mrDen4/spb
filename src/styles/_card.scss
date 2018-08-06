@@ -151,3 +151,72 @@
         height: 50px;
     }
 }
+
+.modal__card {
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    top: 300px;
+    right: 35%;
+    background-color: #ededed;
+    border-radius: 4px;
+    width: 395px;
+    height: 410px;
+    z-index: 99;
+
+    @include phones() {
+        right: 0;
+        width: 100%;
+    }
+
+    .modal__title {
+        font-size: 25px;
+        font-weight: 500;
+        margin-bottom: 35px;
+    }
+
+    .modal__form {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .form__inp {
+        margin-bottom: 20px;
+        height: 45px;
+        width: 100%;
+        border-radius: 4px;
+        background-color: #ffffff;
+        border: none;
+        padding: 17px;
+    }
+
+    .form__btn {
+        width: 219px;
+        height: 45px;
+        border-radius: 4px;
+        background-color: #ff6212;
+        color: white;
+    }
+}
+
+.modal__card--active {
+    display: flex;
+}
+
+.bg__modal {
+    position: absolute;
+    width: 99999px;
+    height: 999999px;
+    background: #000;
+    top: 0;
+    opacity: .5;
+    display: none;
+}
+
+.bg__modal--active {
+    display: inherit;
+}

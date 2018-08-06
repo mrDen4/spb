@@ -19,6 +19,16 @@ $('.bot__humburger').on('click', function() {
   $('.bot__humburger-list').toggleClass('bot__humburger-list--active');
 });
 
+$('.product__ord').on('click', function() {
+  $('.modal__card').toggleClass('modal__card--active');
+  $('.bg__modal').toggleClass('bg__modal--active');
+});
+
+$('.bg__modal').on('click', function() {
+  $('.modal__card').toggleClass('modal__card--active');
+  $('.bg__modal').toggleClass('bg__modal--active');
+});
+
 $('.another__slider').slick({
     infinite: true,
     slidesToShow: 4,

@@ -35,6 +35,11 @@
         font-weight: 500;
         color: #333333;
         text-align: center;
+
+        @include phones() {
+            padding: 0;
+            margin-top: 0;
+        }
     }
 
     .foam__apply {
@@ -124,6 +129,16 @@
 
             .img__list {
                 display: flex;
+                padding: 0;
+                flex-wrap: wrap;
+                align-items: flex-start;
+                justify-content: flex-start;
+            }
+
+            .img__img {
+                @include phones() {
+                    width: 100%;
+                }
             }
         }
     }
@@ -136,7 +151,6 @@
 
         .compare__list {
             width: 600px;
-            height: 130px;
             background-color: #ededed;
             border-radius: 5px;
             display: flex;
@@ -144,6 +158,7 @@
             list-style: none;
             align-items: center;
             margin-bottom: 60px;
+            padding: 20px;
 
             @include phones() {
                 width: 100%;
@@ -154,6 +169,10 @@
             width: 50%;
             display: flex;
             color: #333333;
+
+            @include phones() {
+                width: 100%;
+            }
 
             .item__square {
                 width: 20px;
@@ -188,6 +207,11 @@
 
             .img__item {
                 width: 170px;
+
+                @include phones() {
+                    width: 50%;
+                    margin-bottom: 20px;
+                }
             }
 
             a {

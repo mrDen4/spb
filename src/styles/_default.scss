@@ -164,6 +164,7 @@ ol {
 
     @include phones() {
         padding: 20px 20px;
+        margin-top: 0;
     }
 
     .container {
