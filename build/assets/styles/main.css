@@ -1,5 +1,10 @@
 body {
+  height: 100%;
+  width: 100%;
   overflow-x: hidden; }
+
+footer {
+  width: 100%; }
 
 @media screen and (max-width: 480px) {
   h2 {
@@ -540,7 +545,8 @@ p > a:hover {
   .header .top__callback {
     display: flex;
     align-items: center;
-    justify-content: center; }
+    justify-content: flex-end;
+    width: 75%; }
     @media screen and (max-width: 480px) {
       .header .top__callback {
         order: -1;

@@ -135,7 +135,8 @@
     .top__callback {
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: flex-end;
+        width: 75%;
         
         @include phones() {
             order: -1;
