@@ -1413,3 +1413,97 @@ p > a:hover {
       color: #ff6212;
       font-size: 18px;
       font-weight: 500; }
+
+.product__basket {
+  display: flex;
+  flex-direction: column; }
+
+.basket__list {
+  display: flex;
+  flex-direction: column;
+  padding: 0; }
+  .basket__list .basket__item {
+    display: flex;
+    border: 1px solid #cccccc;
+    min-height: 130px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 30px; }
+    @media screen and (max-width: 480px) {
+      .basket__list .basket__item {
+        flex-direction: column;
+        padding: 20px; } }
+  .basket__list .item__img {
+    width: 160px;
+    margin-right: 30px; }
+    @media screen and (max-width: 480px) {
+      .basket__list .item__img {
+        margin-right: 0;
+        margin-bottom: 20px; } }
+    .basket__list .item__img .img__img {
+      width: 100%; }
+  .basket__list .basket__name {
+    margin-right: 200px; }
+    @media screen and (max-width: 480px) {
+      .basket__list .basket__name {
+        margin-right: 0;
+        text-align: center; } }
+  .basket__list .basket__count {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px; }
+    @media screen and (max-width: 480px) {
+      .basket__list .basket__count {
+        margin-right: 0;
+        margin-bottom: 20px; } }
+    .basket__list .basket__count .count__btn {
+      border: none;
+      background-color: #ededed;
+      opacity: 0.7;
+      height: 40px;
+      width: 50px; }
+    .basket__list .basket__count .count__number {
+      background-color: #ededed;
+      opacity: 0.7;
+      height: 40px;
+      width: 50px;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+  .basket__list .basket__price {
+    font-size: 23px;
+    font-weight: 700;
+    letter-spacing: 0.46px; }
+  .basket__list .basket__delete {
+    position: absolute;
+    right: 15px;
+    top: 0px;
+    background: none;
+    border: none;
+    color: #ff6212;
+    font-size: 25px;
+    padding: 0; }
+
+.basket__result {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; }
+  .basket__result .result__text {
+    font-size: 23px;
+    font-weight: 700;
+    margin-right: 40px; }
+    @media screen and (max-width: 480px) {
+      .basket__result .result__text {
+        margin-right: 0; } }
+    .basket__result .result__text .text__orange {
+      color: #ff6212; }
+  .basket__result .result__btn {
+    width: 236px;
+    height: 49px;
+    border-radius: 4px;
+    border: 2px solid #ff6212;
+    background-color: #ff6212;
+    color: white; }

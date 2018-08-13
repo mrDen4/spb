@@ -1,0 +1,125 @@
+.product__basket {
+    display: flex;
+    flex-direction: column;
+}
+
+.basket__list {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+
+    .basket__item {
+        display: flex;
+        border: 1px solid #cccccc;
+        min-height: 130px;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        margin-bottom: 30px;
+
+        @include phones() {
+            flex-direction: column;
+            padding: 20px;
+        }
+    }
+
+    .item__img {
+        width: 160px;
+        margin-right: 30px;
+
+        @include phones() {
+            margin-right: 0;
+            margin-bottom: 20px;
+        }
+
+        .img__img {
+            width: 100%;
+        }
+    }
+
+    .basket__name {
+        margin-right: 200px;
+
+        @include phones() {
+            margin-right: 0;
+            text-align: center;
+        }
+    }
+
+    .basket__count {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 20px;
+
+        @include phones() {
+            margin-right: 0;
+            margin-bottom: 20px;
+        }
+
+        .count__btn {
+            border: none;
+            background-color: #ededed;
+            opacity: 0.7;
+            height: 40px;
+            width: 50px;
+        }
+
+        .count__number {
+            background-color: #ededed;
+            opacity: 0.7;
+            height: 40px;
+            width: 50px;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    .basket__price {
+        font-size: 23px;
+        font-weight: 700;
+        letter-spacing: 0.46px;
+    }
+
+    .basket__delete {
+        position: absolute;
+        right: 15px;
+        top: 0px;
+        background: none;
+        border: none;
+        color: #ff6212;
+        font-size: 25px;
+        padding: 0;
+    }
+}
+
+.basket__result {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    .result__text {
+        font-size: 23px;
+        font-weight: 700;
+        margin-right: 40px;
+
+        @include phones() {
+            margin-right: 0;
+        }
+
+        .text__orange {
+            color: #ff6212;
+        }
+    }
+
+    .result__btn {
+        width: 236px;
+        height: 49px;
+        border-radius: 4px;
+        border: 2px solid #ff6212;
+        background-color: #ff6212;
+        color: white;
+    }
+}
