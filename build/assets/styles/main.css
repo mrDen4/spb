@@ -299,6 +299,7 @@ p > a:hover {
     background-color: #ededed;
     height: 90px;
     display: flex;
+    flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start; }
     .thumbnail .caption .caption__title {
@@ -340,6 +341,12 @@ p > a:hover {
     margin-left: 20px; }
   .rp .img__img {
     width: 100%; }
+
+.catalog__about .about__imgs {
+  margin-left: 192px; }
+  @media screen and (max-width: 480px) {
+    .catalog__about .about__imgs {
+      margin-left: 0; } }
 
 .product__another {
   position: relative; }
@@ -459,7 +466,7 @@ p > a:hover {
   position: absolute;
   z-index: 999;
   bottom: 200px;
-  left: -40px; }
+  left: -50px; }
   @media screen and (max-width: 480px) {
     .prev__btn {
       left: 0;
@@ -467,14 +474,17 @@ p > a:hover {
       height: 50px; } }
 
 .modal__card {
-  position: absolute;
+  position: fixed;
   display: none;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 30px;
   top: 300px;
-  right: 35%;
+  top: 50%;
+  left: 50%;
+  margin-top: -205px;
+  margin-left: -197px;
   background-color: #ededed;
   border-radius: 4px;
   width: 395px;
@@ -838,7 +848,8 @@ p > a:hover {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    width: 50%; }
+    width: 50%;
+    margin-right: 20px; }
     .calculator .calculator__concrete .concrete__form .form__group {
       display: flex;
       flex-direction: column;
@@ -1025,7 +1036,7 @@ p > a:hover {
     margin-bottom: 60px; }
 
 .calculator .brick__img {
-  margin-top: 40px; }
+  margin-top: 25px; }
 
 .calculator .results .results__title {
   color: #333333;

@@ -377,6 +377,7 @@ p > a:hover{
         background-color: #ededed;
         height: 90px;
         display: flex;
+        flex-direction: column;
         align-items: flex-start;
         justify-content: flex-start;
 
@@ -433,4 +434,16 @@ p > a:hover{
     .img__img {
         width: 100%;
     }
+}
+
+.catalog__about {
+
+    .about__imgs {
+        margin-left: 192px;
+        
+        @include phones() {
+            margin-left: 0;
+        }
+    }
+
 }
