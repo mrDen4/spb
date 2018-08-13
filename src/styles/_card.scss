@@ -165,7 +165,7 @@
     border-radius: 4px;
     width: 395px;
     height: 410px;
-    z-index: 99;
+    z-index: 1099;
 
     @include phones() {
         right: 0;
@@ -213,6 +213,8 @@
     height: 999999px;
     background: #000;
     top: 0;
+    left: 0;
+    z-index: 1000;
     opacity: .5;
     display: none;
 }

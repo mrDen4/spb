@@ -24,10 +24,16 @@ $('.product__ord').on('click', function() {
   $('.bg__modal').toggleClass('bg__modal--active');
 });
 
+$('.result__btn').on('click', function() {
+  $('.modal__card').toggleClass('modal__card--active');
+  $('.bg__modal').toggleClass('bg__modal--active');
+});
+
 $('.bg__modal').on('click', function() {
   $('.modal__card').toggleClass('modal__card--active');
   $('.bg__modal').toggleClass('bg__modal--active');
 });
+
 
 $('.another__slider').slick({
     infinite: true,

@@ -459,7 +459,7 @@ p > a:hover {
   border-radius: 4px;
   width: 395px;
   height: 410px;
-  z-index: 99; }
+  z-index: 1099; }
   @media screen and (max-width: 480px) {
     .modal__card {
       right: 0;
@@ -496,6 +496,8 @@ p > a:hover {
   height: 999999px;
   background: #000;
   top: 0;
+  left: 0;
+  z-index: 1000;
   opacity: .5;
   display: none; }
 
