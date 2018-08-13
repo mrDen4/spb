@@ -83,6 +83,10 @@ h1{
 .thumbnail {
     padding: 0;
     border: 3px solid #dfdfdf;
+    height: 330px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .thumbnail > .caption > h4 {
@@ -371,6 +375,10 @@ p > a:hover{
     
     .caption {
         background-color: #ededed;
+        height: 90px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
 
         .caption__title {
             color: black;
@@ -383,6 +391,7 @@ p > a:hover{
     flex-direction: column;
     padding: 0;
     position: absolute;
+    bottom: -100px;
     z-index: 99;
     background-color: #ededed;
     width: 100%;
@@ -390,7 +399,6 @@ p > a:hover{
     height: 0;
     padding: 0;
     overflow: hidden;
-    transition: .5s;
 
     
     .menu__item {
@@ -411,4 +419,18 @@ p > a:hover{
 .card__menu--active {
     height: 100px;
     padding: 10px;
+}
+
+.rp {
+    display: flex;
+    align-items: center;
+
+    .rp__img {
+        width: 200px;
+        margin-left: 20px;
+    }
+
+    .img__img {
+        width: 100%;
+    }
 }
