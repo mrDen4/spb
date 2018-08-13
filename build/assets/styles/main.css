@@ -345,6 +345,9 @@ p > a:hover {
   padding: 0; }
   .another__slide:last-child {
     margin-right: 0; }
+  .another__slide .slide__link {
+    color: #000;
+    text-decoration: none; }
   .another__slide .slide__img {
     background-color: #f6f6f6;
     width: 100%;
